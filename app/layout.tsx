@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Pare Verde',
-  description: 'Plataforma de Inteligencia Urbana Sustentavel',
+  description: 'Pare Verde - Plataforma de Inteligencia Urbana Sustentavel',
   generator: 'v0.dev',
 }
 
