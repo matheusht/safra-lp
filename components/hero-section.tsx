@@ -338,12 +338,24 @@ export function HeroSection() {
     },
   }
 
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+  const [isVideoLoaded, setIsVideoLoaded] = React.useState(false)
+  const videoRef = React.useRef<HTMLVideoElement>(null)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const timer = setTimeout(() => setIsVideoLoaded(true), 500)
     return () => clearTimeout(timer)
   }, [])
+
+  // Only allow pause/play on click
+  const handleVideoClick = () => {
+    const video = videoRef.current
+    if (!video) return
+    if (video.paused) {
+      video.play()
+    } else {
+      video.pause()
+    }
+  }
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 lg:py-32">
@@ -414,11 +426,16 @@ export function HeroSection() {
                   <Skeleton className="w-full h-full" />
                 </div>
               ) : (
-                <VideoPlayer
+                <video
+                  ref={videoRef}
                   src="/pareverde-admin.mp4"
                   poster="/admin.png"
-                  autoplay={true}
-                  className="aspect-video"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="aspect-video w-full h-full object-cover cursor-pointer"
+                  onClick={handleVideoClick}
                 />
               )}
             </motion.div>
