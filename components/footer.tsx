@@ -49,15 +49,15 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <span>contato@pareverde.com.br</span>
+                <span>dev.matheustheodoro@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone className="h-4 w-4" />
-                <span>(11) 9999-9999</span>
+                <span>(44) 99966-3844</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>São Paulo, Brasil</span>
+                <span>Campo Mourão, PR, Brasil</span>
               </div>
             </div>
           </div>
@@ -116,9 +116,9 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 Pare Verde. Todos os direitos reservados.</p>
+            <p className="text-gray-400 text-sm">© 2025 Pare Verde. Todos os direitos reservados.</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
-              <span className="text-gray-400 text-sm">🇧🇷 Orgulhosamente brasileiro</span>
+              <p className="text-gray-400 text-sm">🇧🇷 Orgulhosamente brasileiro</p>
               <div className="flex space-x-1">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>

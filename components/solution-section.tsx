@@ -50,7 +50,7 @@ export function SolutionSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4">A Solução</Badge>
+          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">A Solução</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Um dashboard para tornar sua cidade mais verde,
             <span className="text-green-600"> acessível e inteligente</span>

@@ -84,7 +84,7 @@ export function ProofSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4">Casos de Sucesso</Badge>
+          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">Casos de Sucesso</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Gestores que já transformaram suas cidades
           </h2>

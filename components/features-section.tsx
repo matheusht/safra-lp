@@ -78,7 +78,7 @@ export function FeaturesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4">Funcionalidades</Badge>
+          <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">Funcionalidades</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tudo que você precisa em uma plataforma</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Seis módulos integrados que trabalham juntos para dar a você uma visão completa e acionável da

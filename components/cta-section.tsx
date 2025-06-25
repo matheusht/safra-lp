@@ -52,7 +52,7 @@ export function CtaSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Badge className="bg-white/20 text-white hover:bg-white/20 mb-6">
+            <Badge className="bg-white/20 text-white hover:bg-white/20 mb-6 text-base">
               <Gift className="h-4 w-4 mr-2" />
               Oferta Limitada
             </Badge>
@@ -96,7 +96,14 @@ export function CtaSection() {
               viewport={{ once: true }}
             >
               {benefits.map((benefit, index) => (
-                <motion.div key={index} className="flex items-center space-x-3" variants={itemVariants}>
+                <motion.div 
+                  key={index} 
+                  className="flex items-center space-x-3" 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
                   <CheckCircle className="h-5 w-5 text-green-300 flex-shrink-0" />
                   <span className="text-left">{benefit}</span>
                 </motion.div>
@@ -134,11 +141,11 @@ export function CtaSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 text-lg px-8 py-4"
+                className="border-white text-green-600 hover:bg-white/10 text-lg px-8 py-4"
                 asChild
               >
                 <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Ver Demo ao Vivo
+                  Agendar Demo
                 </a>
               </Button>
             </motion.div>
