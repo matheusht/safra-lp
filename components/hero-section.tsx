@@ -416,7 +416,7 @@ export function HeroSection() {
               ) : (
                 <VideoPlayer
                   src="/pareverde-admin.mp4"
-                  poster="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=675&fit=crop"
+                  poster="/admin.png"
                   autoplay={true}
                   className="aspect-video"
                 />
