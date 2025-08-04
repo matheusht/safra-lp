@@ -18,7 +18,7 @@ export default function Home() {
         <SolutionSection />
         <BenefitsSection />
         <FeaturesSection />
-        <ProofSection />
+        {/* <ProofSection /> */}
         <CtaSection />
       </main>
       <Footer />
