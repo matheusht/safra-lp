@@ -125,7 +125,7 @@ export function SolutionSection() {
 
             <motion.div variants={itemVariants}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
-                <a href="#demo" rel="noopener noreferrer">
+                <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
                   Testar Grátis por 14 Dias
                 </a>
               </Button>

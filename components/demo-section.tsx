@@ -72,7 +72,7 @@ export function DemoSection() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-green-600" />
-                  <span>(44) 99966-3844</span>
+                  <span>(44) 99952-2514</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-green-600" />
@@ -132,8 +132,10 @@ export function DemoSection() {
                 <Textarea id="observacoes" placeholder="Google, indicação, redes sociais..." />
               </div>
 
-              <Button size="lg" className="w-full bg-green-600 hover:bg-green-700">
-                Começar Teste Grátis de 14 Dias
+              <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
+                <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
+                  Começar Teste Grátis de 14 Dias
+                </a>
               </Button>
 
               <p className="text-xs text-gray-500 text-center">

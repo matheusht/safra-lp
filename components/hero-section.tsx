@@ -381,7 +381,7 @@ export function HeroSection() {
 
             <motion.div className="flex flex-col sm:flex-row gap-4" variants={itemVariants}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8" asChild>
-                <a href="#demo" rel="noopener noreferrer">
+                <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
                   Começar Teste Grátis
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>

@@ -150,7 +150,7 @@ export function FeaturesSection() {
             e oportunidades específicas nas suas culturas.
           </p>
           <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" asChild>
-            <a href="#demo" rel="noopener noreferrer">
+            <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
               Começar Teste Grátis
             </a>
           </Button>

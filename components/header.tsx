@@ -35,7 +35,7 @@ export function Header() {
 
         <div className="flex items-center space-x-4">
           <Button className="hidden md:inline-flex bg-green-600 hover:bg-green-700" asChild>
-            <a href="#demo" rel="noopener noreferrer">
+            <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
               Teste Grátis
             </a>
           </Button>
@@ -59,7 +59,7 @@ export function Header() {
                   </a>
                 ))}
                 <Button className="mt-4 bg-green-600 hover:bg-green-700" asChild>
-                  <a href="#demo" rel="noopener noreferrer">
+                  <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
                     Teste Grátis
                   </a>
                 </Button>

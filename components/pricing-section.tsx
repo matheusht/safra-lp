@@ -13,7 +13,7 @@ export function PricingSection() {
       period: "14 dias",
       description: "Experimente todas as funcionalidades",
       features: [
-        "Até 3 propriedades",
+        "Até 1 propriedade",
         "Mapas NDVI semanais",
         "Alertas básicos",
         "Suporte por email",
@@ -27,11 +27,11 @@ export function PricingSection() {
     },
     {
       name: "Produtor",
-      price: "R$ 29",
+      price: "R$ 199",
       period: "por mês",
       description: "Para produtores individuais",
       features: [
-        "Até 10 propriedades",
+        "Até 3 propriedades",
         "Mapas NDVI semanais",
         "Alertas automáticos",
         "Análise de aplicação variável",
@@ -73,7 +73,6 @@ export function PricingSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >       
- >
           <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">Preços</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Planos que cabem no seu bolso
@@ -136,7 +135,7 @@ export function PricingSection() {
                 size="lg"
                 asChild
               >
-                <a href="#demo" rel="noopener noreferrer">
+                <a href="https://windwhisper.avenza.cloud/agriculture/map" target="_blank" rel="noopener noreferrer">
                   {plan.cta}
                 </a>
               </Button>
