@@ -1,23 +1,23 @@
-import { Leaf, Mail, Phone, MapPin } from "lucide-react"
+import { Satellite, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   const links = {
     produto: [
       { label: "Funcionalidades", href: "#funcionalidades" },
       { label: "Preços", href: "#precos" },
-      { label: "Demo", href: "#demo" },
-      { label: "Casos de Sucesso", href: "#cases" },
+      { label: "Teste Grátis", href: "#demo" },
+      { label: "Como Funciona", href: "#solucao" },
     ],
     recursos: [
-      { label: "Blog", href: "/blog" },
-      { label: "Guias", href: "/guias" },
-      { label: "Webinars", href: "/webinars" },
+      { label: "Guia NDVI", href: "/guia-ndvi" },
+      { label: "Tutoriais", href: "/tutoriais" },
+      { label: "FAQ", href: "/faq" },
       { label: "Suporte", href: "/suporte" },
     ],
     empresa: [
-      { label: "Sobre Nós", href: "/sobre" },
-      { label: "Carreiras", href: "/carreiras" },
-      { label: "Imprensa", href: "/imprensa" },
+      { label: "Sobre o Safra Fácil", href: "/sobre" },
+      { label: "Dados NASA", href: "/dados-nasa" },
+      { label: "Casos de Uso", href: "/casos" },
       { label: "Contato", href: "/contato" },
     ],
     legal: [
@@ -36,14 +36,14 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-600">
-                <Leaf className="h-5 w-5 text-white" />
+                <Satellite className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold">Pare Verde</span>
+              <span className="text-xl font-bold">Safra Fácil</span>
             </div>
 
             <p className="text-gray-400 mb-6 max-w-md">
-              A primeira plataforma brasileira de sustentabilidade urbana que unifica dados de calor, vegetação e
-              acessibilidade em um dashboard inteligente.
+              A primeira plataforma brasileira que transforma dados de satélite da NASA em mapas de saúde das culturas 
+              que qualquer produtor pode entender e usar.
             </p>
 
             <div className="space-y-3">
@@ -116,7 +116,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2025 Pare Verde. Todos os direitos reservados.</p>
+            <p className="text-gray-400 text-sm">© 2025 Safra Fácil. Todos os direitos reservados.</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <p className="text-gray-400 text-sm">🇧🇷 Orgulhosamente brasileiro</p>
               <div className="flex space-x-1">

@@ -6,24 +6,24 @@ import { motion } from "framer-motion"
 export function ProblemsSection() {
   const problems = [
     {
-      icon: FileSpreadsheet,
-      title: "Dados Fragmentados",
-      description: "Planilhas desatualizadas e sistemas isolados impedem uma visão integrada da cidade.",
-    },
-    {
-      icon: Clock,
-      title: "Decisões Lentas",
-      description: "Sem dados em tempo real, as intervenções chegam tarde demais para fazer diferença.",
+      icon: AlertTriangle,
+      title: "Detecção Tardia de Problemas",
+      description: "Você só descobre estresse hídrico, pragas ou deficiências quando já é tarde demais.",
     },
     {
       icon: TrendingDown,
-      title: "Orçamento Desperdiçado",
-      description: "Investimentos sem dados precisos resultam em baixo impacto e recursos mal aplicados.",
+      title: "Aplicação Ineficiente de Fertilizantes",
+      description: "Sem dados precisos, você aplica fertilizante demais em algumas áreas e de menos em outras.",
     },
     {
-      icon: AlertTriangle,
-      title: "Pressão Política",
-      description: "Cidadãos exigem resultados, mas faltam ferramentas para justificar e priorizar ações.",
+      icon: Clock,
+      title: "Perda de Tempo no Campo",
+      description: "Caminha por toda a propriedade para identificar problemas que poderiam ser vistos do espaço.",
+    },
+    {
+      icon: FileSpreadsheet,
+      title: "Falta de Dados Históricos",
+      description: "Sem registros organizados, é difícil comparar safras e melhorar o planejamento.",
     },
   ]
 
@@ -73,11 +73,11 @@ export function ProblemsSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Os desafios que todo gestor municipal enfrenta
+            Os desafios que todo produtor rural enfrenta
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Trabalhar com dados desatualizados e ferramentas isoladas está custando tempo, orçamento e impedindo o
-            impacto real que sua cidade precisa.
+            Gerenciar a saúde das culturas sem dados precisos está custando produtividade, aumentando custos 
+            e reduzindo a rentabilidade da sua propriedade.
           </p>
         </motion.div>
 
@@ -112,7 +112,7 @@ export function ProblemsSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{"Você não está sozinho nessa luta"}</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{"O impacto real na sua produtividade"}</h3>
             <motion.div
               className="grid md:grid-cols-3 gap-8 mt-8"
               variants={containerVariants}
@@ -121,16 +121,16 @@ export function ProblemsSection() {
               viewport={{ once: true }}
             >
               <motion.div className="text-center" variants={statsVariants}>
-                <div className="text-3xl font-bold text-red-600 mb-2">90%</div>
-                <p className="text-gray-600">das cidades brasileiras carecem de dados urbanos integrados</p>
+                <div className="text-3xl font-bold text-red-600 mb-2">15-25%</div>
+                <p className="text-gray-600">de perda de produtividade por detecção tardia de problemas</p>
               </motion.div>
               <motion.div className="text-center" variants={statsVariants}>
-                <div className="text-3xl font-bold text-red-600 mb-2">0</div>
-                <p className="text-gray-600">capitais oferecem condições adequadas para pedestres</p>
+                <div className="text-3xl font-bold text-red-600 mb-2">30-40%</div>
+                <p className="text-gray-600">de desperdício em fertilizantes por aplicação inadequada</p>
               </motion.div>
               <motion.div className="text-center" variants={statsVariants}>
-                <div className="text-3xl font-bold text-red-600 mb-2">18%</div>
-                <p className="text-gray-600">dos municípios concluíram o Plano de Mobilidade Urbana</p>
+                <div className="text-3xl font-bold text-red-600 mb-2">R$ 120/ha</div>
+                <p className="text-gray-600">de economia potencial com aplicação variável de fertilizantes</p>
               </motion.div>
             </motion.div>
           </div>

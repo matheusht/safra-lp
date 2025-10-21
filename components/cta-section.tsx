@@ -7,10 +7,10 @@ import { motion } from "framer-motion"
 
 export function CtaSection() {
   const benefits = [
-    "Auditoria completa da sua cidade",
-    "Identificação de 3 oportunidades prioritárias",
-    "Relatório executivo personalizado",
-    "Sessão de planejamento estratégico",
+    "Mapas NDVI de todas as suas culturas",
+    "Alertas automáticos de mudanças na saúde das plantas",
+    "Análise de aplicação variável para economia de fertilizantes",
+    "Suporte técnico em português via WhatsApp",
   ]
 
   const containerVariants = {
@@ -65,7 +65,7 @@ export function CtaSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Transforme sua cidade em 30 dias
+            Comece a monitorar suas culturas hoje
           </motion.h2>
 
           <motion.p
@@ -75,8 +75,8 @@ export function CtaSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Solicite sua <strong>Auditoria Urbana Gratuita</strong> e descubra como a Pare Verde pode identificar as
-            oportunidades mais impactantes para sua gestão.
+            Inicie seu <strong>teste gratuito de 14 dias</strong> e descubra como o Safra Fácil pode detectar problemas 
+            nas suas culturas antes que sejam visíveis no campo.
           </motion.p>
 
           <motion.div
@@ -86,7 +86,7 @@ export function CtaSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <h3 className="text-2xl font-bold mb-6">O que você recebe gratuitamente:</h3>
+            <h3 className="text-2xl font-bold mb-6">O que você recebe nos 14 dias grátis:</h3>
 
             <motion.div
               className="grid md:grid-cols-2 gap-4 mb-8"
@@ -118,7 +118,7 @@ export function CtaSection() {
               transition={{ delay: 1 }}
             >
               <Clock className="h-5 w-5" />
-              <span>Processo completo em apenas 7 dias úteis</span>
+              <span>Configuração completa em apenas 5 minutos</span>
             </motion.div>
           </motion.div>
 
@@ -131,8 +131,8 @@ export function CtaSection() {
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 text-lg px-8 py-4" asChild>
-                <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Acessar Plataforma Agora
+                <a href="#demo" rel="noopener noreferrer">
+                  Começar Teste Grátis Agora
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
@@ -141,11 +141,11 @@ export function CtaSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-green-600 hover:bg-white/10 text-lg px-8 py-4"
+                className="border-white text-white hover:bg-white/10 text-lg px-8 py-4"
                 asChild
               >
-                <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Agendar Demo
+                <a href="#funcionalidades" rel="noopener noreferrer">
+                  Ver Funcionalidades
                 </a>
               </Button>
             </motion.div>
@@ -159,9 +159,9 @@ export function CtaSection() {
             transition={{ delay: 1.2 }}
           >
             <p className="mb-2">
-              <strong>Sem compromisso.</strong> Sem custos ocultos. Sem necessidade de equipe técnica.
+              <strong>Sem compromisso.</strong> Sem cartão de crédito. Sem necessidade de treinamento técnico.
             </p>
-            <p className="text-sm">✓ Hospedado no Brasil ✓ Conforme LGPD ✓ Suporte em português</p>
+            <p className="text-sm">✓ Dados NASA confiáveis ✓ Interface em português ✓ Suporte via WhatsApp</p>
           </motion.div>
         </motion.div>
       </div>

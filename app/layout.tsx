@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Pare Verde',
-  description: 'Pare Verde - Plataforma de Inteligencia Urbana Sustentavel',
+  title: 'Safra Fácil - Monitoramento de Culturas via Satélite',
+  description: 'Transforme dados de satélite da NASA em mapas de saúde das culturas que você pode entender. Detecte problemas antes que sejam visíveis no campo e otimize sua aplicação de fertilizantes.',
 }
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>{children}</body>
     </html>
   )

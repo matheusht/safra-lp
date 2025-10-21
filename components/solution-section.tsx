@@ -52,12 +52,12 @@ export function SolutionSection() {
         >
           <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">A Solução</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Um dashboard para tornar sua cidade mais verde,
-            <span className="text-green-600"> acessível e inteligente</span>
+            Mapas de saúde das culturas que você pode
+            <span className="text-green-600"> entender e usar</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A Pare Verde é a primeira plataforma brasileira que combina detecção de ilhas de calor, mapeamento de
-            cobertura verde e auditorias de acessibilidade em uma única interface alimentada por IA.
+            O Safra Fácil é a primeira plataforma brasileira que transforma dados de satélite da NASA em mapas 
+            coloridos de saúde das culturas (NDVI), alertas automáticos e recomendações de aplicação variável.
           </p>
         </motion.div>
 
@@ -75,10 +75,10 @@ export function SolutionSection() {
                   <Satellite className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Dados Satelitais em Tempo Real</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Mapas NDVI em Tempo Real</h3>
                   <p className="text-gray-600">
-                    Monitore ilhas de calor e cobertura vegetal com precisão, usando imagens de satélite atualizadas
-                    automaticamente.
+                    Veja a saúde das suas culturas em mapas coloridos atualizados semanalmente com dados dos 
+                    satélites Sentinel-2 e Landsat da NASA.
                   </p>
                 </div>
               </motion.div>
@@ -88,10 +88,10 @@ export function SolutionSection() {
                   <Brain className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Inteligência Artificial Integrada</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Alertas Automáticos de Mudanças</h3>
                   <p className="text-gray-600">
-                    Nossa IA analisa padrões urbanos e sugere intervenções prioritárias baseadas no maior impacto por
-                    real investido.
+                    Receba notificações quando mais de 15% da sua área apresentar queda significativa na saúde 
+                    das plantas comparado aos últimos 30 dias.
                   </p>
                 </div>
               </motion.div>
@@ -101,10 +101,10 @@ export function SolutionSection() {
                   <BarChart3 className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Relatórios Visuais Automáticos</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Recomendações de Aplicação Variável</h3>
                   <p className="text-gray-600">
-                    Gere relatórios profissionais em PDF para justificar orçamentos e conquistar apoio político com
-                    dados concretos.
+                    Economize até R$ 120/hectare com mapas de aplicação variável de fertilizantes baseados na 
+                    variabilidade real do seu campo.
                   </p>
                 </div>
               </motion.div>
@@ -114,9 +114,10 @@ export function SolutionSection() {
                   <Shield className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Seguro e Brasileiro</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Simples e Móvel</h3>
                   <p className="text-gray-600">
-                    Hospedado no Brasil, em conformidade com a LGPD e todas as exigências legais para dados municipais.
+                    Interface pensada para o campo: funciona no celular, com 3G, e em português. Sem complicação, 
+                    sem treinamento técnico.
                   </p>
                 </div>
               </motion.div>
@@ -124,8 +125,8 @@ export function SolutionSection() {
 
             <motion.div variants={itemVariants}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
-                <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Ver Como Funciona na Prática
+                <a href="#demo" rel="noopener noreferrer">
+                  Testar Grátis por 14 Dias
                 </a>
               </Button>
             </motion.div>
@@ -143,7 +144,7 @@ export function SolutionSection() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-bold mb-6">Motor Geoespacial com IA</h3>
+              <h3 className="text-2xl font-bold mb-6">Processamento de Dados NASA</h3>
 
               <div className="space-y-4">
                 <motion.div
@@ -154,7 +155,7 @@ export function SolutionSection() {
                   transition={{ delay: 0.2 }}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">Detecção de Ilhas de Calor</span>
+                    <span className="font-medium">Análise NDVI Sentinel-2</span>
                     <Badge className="bg-white/20 text-white">Ativo</Badge>
                   </div>
                   <div className="w-full bg-white/20 rounded-full h-2">
@@ -164,7 +165,7 @@ export function SolutionSection() {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true }}
-                      style={{ "--progress-width": "75%" } as any}
+                      style={{ "--progress-width": "92%" } as any}
                     />
                   </div>
                 </motion.div>
@@ -177,7 +178,7 @@ export function SolutionSection() {
                   transition={{ delay: 0.4 }}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">Mapeamento de Cobertura Verde</span>
+                    <span className="font-medium">Detecção de Mudanças</span>
                     <Badge className="bg-white/20 text-white">Ativo</Badge>
                   </div>
                   <div className="w-full bg-white/20 rounded-full h-2">
@@ -187,7 +188,7 @@ export function SolutionSection() {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true }}
-                      style={{ "--progress-width": "83%" } as any}
+                      style={{ "--progress-width": "87%" } as any}
                     />
                   </div>
                 </motion.div>
@@ -200,7 +201,7 @@ export function SolutionSection() {
                   transition={{ delay: 0.6 }}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">Auditoria de Acessibilidade</span>
+                    <span className="font-medium">Análise de Variabilidade</span>
                     <Badge className="bg-white/20 text-white">Ativo</Badge>
                   </div>
                   <div className="w-full bg-white/20 rounded-full h-2">
@@ -210,7 +211,7 @@ export function SolutionSection() {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true }}
-                      style={{ "--progress-width": "67%" } as any}
+                      style={{ "--progress-width": "78%" } as any}
                     />
                   </div>
                 </motion.div>
@@ -223,8 +224,8 @@ export function SolutionSection() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.8 }}
               >
-                <div className="text-sm opacity-90 mb-1">Próxima Recomendação:</div>
-                <div className="font-medium">Plantar 50 árvores na Rua das Flores para reduzir 3°C</div>
+                <div className="text-sm opacity-90 mb-1">Última Análise:</div>
+                <div className="font-medium">Área de 12 ha com NDVI baixo detectada no talhão norte</div>
               </motion.div>
             </motion.div>
           </motion.div>

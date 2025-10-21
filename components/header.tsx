@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Leaf, Menu } from "lucide-react"
+import { Satellite, Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
@@ -7,7 +7,7 @@ export function Header() {
     { label: "Solução", href: "#solucao" },
     { label: "Benefícios", href: "#beneficios" },
     { label: "Funcionalidades", href: "#funcionalidades" },
-    { label: "Cases", href: "#cases" },
+    { label: "Preços", href: "#precos" },
   ]
 
   return (
@@ -15,9 +15,9 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <div className="flex items-center space-x-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-600">
-            <Leaf className="h-5 w-5 text-white" />
+            <Satellite className="h-5 w-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-green-800">Pare Verde</span>
+          <span className="text-xl font-bold text-green-800">Safra Fácil</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -35,8 +35,8 @@ export function Header() {
 
         <div className="flex items-center space-x-4">
           <Button className="hidden md:inline-flex bg-green-600 hover:bg-green-700" asChild>
-            <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-              Acessar Plataforma
+            <a href="#demo" rel="noopener noreferrer">
+              Teste Grátis
             </a>
           </Button>
 
@@ -59,8 +59,8 @@ export function Header() {
                   </a>
                 ))}
                 <Button className="mt-4 bg-green-600 hover:bg-green-700" asChild>
-                  <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                    Acessar Plataforma
+                  <a href="#demo" rel="noopener noreferrer">
+                    Teste Grátis
                   </a>
                 </Button>
               </div>

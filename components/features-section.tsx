@@ -2,46 +2,46 @@
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Thermometer, TreePine, Accessibility, Map, FileText, Settings } from "lucide-react"
+import { Satellite, TrendingUp, Bell, Map, BarChart3, Settings } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: Thermometer,
-      title: "Detector de Ilhas de Calor",
-      description: "IA analisa imagens de satélite para identificar zonas críticas de temperatura",
-      capabilities: ["Alertas automáticos", "Mapas de calor em tempo real", "Tendências históricas"],
+      icon: Satellite,
+      title: "Mapas NDVI Coloridos",
+      description: "Visualize a saúde das culturas em mapas fáceis de entender com dados NASA",
+      capabilities: ["Sentinel-2 (10m resolução)", "Landsat (30m resolução)", "Atualização semanal"],
     },
     {
-      icon: TreePine,
-      title: "Mapeador de Cobertura Verde",
-      description: "Calcule percentual de vegetação e identifique oportunidades de plantio",
-      capabilities: ["Análise de biomassa", "Planejamento de arborização", "Monitoramento de crescimento"],
+      icon: TrendingUp,
+      title: "Análise de Tendências",
+      description: "Compare a saúde atual com histórico de 30 dias para detectar mudanças",
+      capabilities: ["Baseline de 30 dias", "Detecção de declínio", "Gráficos temporais"],
     },
     {
-      icon: Accessibility,
-      title: "Auditor de Acessibilidade",
-      description: "Mapeie barreiras urbanas e priorize melhorias de mobilidade",
-      capabilities: ["Auditoria de calçadas", "Mapa de obstáculos", "Conformidade com normas"],
+      icon: Bell,
+      title: "Alertas Automáticos",
+      description: "Receba notificações quando áreas grandes apresentarem problemas",
+      capabilities: ["Alertas por WhatsApp", "Limite de 15% de declínio", "Área mínima de 5 hectares"],
     },
     {
       icon: Map,
-      title: "Dashboard Unificado",
-      description: "Visualize todos os indicadores em uma interface intuitiva",
-      capabilities: ["Mapas interativos", "Filtros personalizados", "Comparações temporais"],
+      title: "Interface Mobile",
+      description: "Acesse seus mapas no campo, direto do celular, mesmo com 3G",
+      capabilities: ["Otimizado para celular", "Funciona com 3G", "Interface em português"],
     },
     {
-      icon: FileText,
-      title: "Relatórios Automáticos",
-      description: "Gere documentos profissionais para apresentações e editais",
-      capabilities: ["PDFs executivos", "Gráficos personalizados", "Dados para mídia"],
+      icon: BarChart3,
+      title: "Aplicação Variável (VRA)",
+      description: "Economize fertilizantes com mapas de aplicação baseados na variabilidade",
+      capabilities: ["Análise de uniformidade", "Zonas de manejo", "Economia até R$ 120/ha"],
     },
     {
       icon: Settings,
-      title: "Planejador de Intervenções",
-      description: "Priorize ações baseadas no maior impacto por investimento",
-      capabilities: ["Análise de ROI", "Cronogramas sugeridos", "Estimativas de custo"],
+      title: "Gestão de Propriedades",
+      description: "Monitore múltiplos talhões e compare performance entre áreas",
+      capabilities: ["Múltiplas propriedades", "Comparação de talhões", "Histórico de safras"],
     },
   ]
 
@@ -79,10 +79,10 @@ export function FeaturesSection() {
           transition={{ duration: 0.6 }}
         >
           <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4 text-base">Funcionalidades</Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tudo que você precisa em uma plataforma</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tudo que você precisa para monitorar suas culturas</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Seis módulos integrados que trabalham juntos para dar a você uma visão completa e acionável da
-            sustentabilidade urbana da sua cidade.
+            Seis funcionalidades integradas que trabalham juntos para dar a você uma visão completa e acionável 
+            da saúde das suas culturas usando dados de satélite.
           </p>
         </motion.div>
 
@@ -144,14 +144,14 @@ export function FeaturesSection() {
           transition={{ duration: 0.6 }}
           whileHover={{ scale: 1.02 }}
         >
-          <h3 className="text-2xl font-bold mb-4">Veja a Pare Verde em ação na sua cidade</h3>
+          <h3 className="text-2xl font-bold mb-4">Veja o Safra Fácil em ação na sua propriedade</h3>
           <p className="text-green-100 mb-6 max-w-2xl mx-auto">
-            Agende uma demonstração personalizada e descubra como nossa plataforma pode identificar oportunidades
-            específicas na sua região.
+            Comece seu teste gratuito de 14 dias e descubra como nossa plataforma pode identificar problemas 
+            e oportunidades específicas nas suas culturas.
           </p>
           <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" asChild>
-            <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-              Acessar Demo da Plataforma
+            <a href="#demo" rel="noopener noreferrer">
+              Começar Teste Grátis
             </a>
           </Button>
         </motion.div>

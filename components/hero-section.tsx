@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { Skeleton } from '@/components/ui/skeleton'
-import { Play, Pause, Volume2, VolumeX, Maximize, RotateCcw, Loader2, ArrowRight, TreePine, Thermometer } from "lucide-react"
+import { Play, Pause, Volume2, VolumeX, Maximize, RotateCcw, Loader2, ArrowRight, Satellite, Sprout } from "lucide-react"
 import { motion } from "framer-motion"
 
 interface VideoPlayerProps {
@@ -364,25 +364,25 @@ export function HeroSection() {
           <motion.div className="space-y-8" variants={containerVariants} initial="hidden" animate="visible">
             <motion.div variants={itemVariants}>
               <Badge className="bg-green-100 text-green-800 hover:bg-green-100 text-base">
-                🌱 Plataforma de Sustentabilidade Urbana
+                🛰️ Monitoramento de Safras via Satélite
               </Badge>
             </motion.div>
 
             <motion.div className="space-y-6" variants={itemVariants}>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transforme sua cidade com <span className="text-green-600">dados inteligentes</span>
+                Monitore a saúde das suas <span className="text-green-600">culturas em tempo real</span>
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                A Pare Verde unifica mapas de calor, cobertura verde e auditorias de acessibilidade em um dashboard
-                único. Tome decisões baseadas em dados e construa o legado de uma cidade mais sustentável e inclusiva.
+                O Safra Fácil transforma dados de satélite da NASA em mapas de saúde das culturas (NDVI) que você pode entender. 
+                Detecte problemas antes que sejam visíveis no campo e otimize sua aplicação de fertilizantes.
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col sm:flex-row gap-4" variants={itemVariants}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8" asChild>
-                <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Acessar Plataforma
+                <a href="#demo" rel="noopener noreferrer">
+                  Começar Teste Grátis
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
@@ -392,8 +392,8 @@ export function HeroSection() {
                 className="text-lg px-8 border-green-600 text-green-600 hover:bg-green-50"
                 asChild
               >
-                <a href="https://pareverde.vercel.app" target="_blank" rel="noopener noreferrer">
-                  Agendar Demo
+                <a href="#funcionalidades" rel="noopener noreferrer">
+                  Ver Como Funciona
                 </a>
               </Button>
             </motion.div>
@@ -401,11 +401,11 @@ export function HeroSection() {
             <motion.div className="flex items-center space-x-8 pt-4" variants={itemVariants}>
               <div className="flex items-center space-x-2">
                 <div className="h-2 w-2 bg-green-500 rounded-full"></div>
-                <span className="text-sm text-gray-600">Hospedado no Brasil</span>
+                <span className="text-sm text-gray-600">Dados NASA em tempo real</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="h-2 w-2 bg-green-500 rounded-full"></div>
-                <span className="text-sm text-gray-600">Conforme LGPD</span>
+                <span className="text-sm text-gray-600">14 dias grátis</span>
               </div>
             </motion.div>
           </motion.div>
@@ -429,7 +429,7 @@ export function HeroSection() {
                 <video
                   ref={videoRef}
                   src="/pareverde-admin.mp4"
-                  poster="/admin.png"
+                  poster="/placeholder.jpg"
                   autoPlay
                   muted
                   loop
@@ -447,7 +447,7 @@ export function HeroSection() {
               initial="hidden"
               animate="visible"
             >
-              <TreePine className="h-6 w-6" />
+              <Satellite className="h-6 w-6" />
             </motion.div>
             <motion.div
               className="absolute -bottom-4 -left-4 bg-emerald-500 text-white p-3 rounded-full shadow-lg"
@@ -456,7 +456,7 @@ export function HeroSection() {
               animate="visible"
               transition={{ delay: 1.2 }}
             >
-              <Thermometer className="h-6 w-6" />
+              <Sprout className="h-6 w-6" />
             </motion.div>
           </motion.div>
         </div>
