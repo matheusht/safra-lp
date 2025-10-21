@@ -428,7 +428,7 @@ export function HeroSection() {
               ) : (
                 <video
                   ref={videoRef}
-                  src="/pareverde-admin.mp4"
+                  src="/windwhisper.mp4"
                   poster="/placeholder.jpg"
                   autoPlay
                   muted
