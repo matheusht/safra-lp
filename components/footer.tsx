@@ -42,7 +42,7 @@ export function Footer() {
             </div>
 
             <p className="text-gray-400 mb-6 max-w-md">
-              A primeira plataforma brasileira que transforma dados de satélite da NASA em mapas de saúde das culturas 
+              A primeira plataforma brasileira que transforma dados de satélite da NASA em mapas de saúde das culturas
               que qualquer produtor pode entender e usar.
             </p>
 

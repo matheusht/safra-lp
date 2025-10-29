@@ -27,7 +27,7 @@ export function PricingSection() {
     },
     {
       name: "Produtor",
-      price: "R$ 199",
+      price: "R$ 49",
       period: "por mês",
       description: "Para produtores individuais",
       features: [
