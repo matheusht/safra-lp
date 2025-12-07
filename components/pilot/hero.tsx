@@ -44,7 +44,7 @@ export function PilotHero() {
 
             <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
               Pare de Adivinhar. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-black">
                 Comece a Provar.
               </span>
             </h1>

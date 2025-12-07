@@ -6,16 +6,16 @@ import { motion } from "framer-motion"
 
 export function PilotProblems() {
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
+    <section className="py-24 bg-slate-100 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">
             O Risco Invisível que <br />
-            <span className="text-red-500">Mata Seus Lucros</span>
+            <span className="text-red-600 font-extrabold bg-red-100 px-2 leading-relaxed inline-block mt-2 transform -rotate-1">Mata Seus Lucros</span>
           </h2>
           <p className="text-xl text-slate-600">
             Você confia no aplicativo de tempo padrão? Ele mostra o vento no <strong>solo</strong>. 
-            Seu drone voa a 50 metros. Você está voando cego.
+            Seu drone voa a <span className="font-bold text-slate-900">50 metros</span>. Você está voando cego.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function PilotProblems() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <AlertCircle className="w-6 h-6 text-orange-500 shrink-0 mt-0.5" />
-                <span className="text-slate-600">Mostra vento a <strong>2 metros</strong> (nível do solo)</span>
+                <span className="text-slate-600">Mostra vento a <strong className="text-red-500">2 metros</strong> (nível do solo)</span>
               </li>
               <li className="flex items-start gap-3">
                 <AlertCircle className="w-6 h-6 text-orange-500 shrink-0 mt-0.5" />
@@ -45,12 +45,12 @@ export function PilotProblems() {
               </li>
                <li className="flex items-start gap-3">
                 <AlertCircle className="w-6 h-6 text-orange-500 shrink-0 mt-0.5" />
-                <span className="text-slate-600">Sem registro oficial: sua palavra contra a do fazendeiro</span>
+                <span className="text-slate-600">Sem registro oficial: <span className="font-bold text-slate-800">sua palavra contra a do fazendeiro</span></span>
               </li>
             </ul>
 
             <div className="mt-8 p-4 bg-red-50 border border-red-100 rounded-lg">
-              <p className="text-red-600 font-medium text-sm">
+              <p className="text-red-700 font-medium text-sm">
                 Consequência: Derivas inesperados, prejuízo na lavoura vizinha e risco de processo.
               </p>
             </div>
@@ -59,7 +59,7 @@ export function PilotProblems() {
           {/* The Safra Fácil Way - Positive */}
            <motion.div
             whileHover={{ y: -5 }}
-            className="bg-white border border-green-200 rounded-2xl p-8 relative overflow-hidden group hover:border-green-500 transition-colors shadow-lg shadow-green-900/5"
+            className="bg-white border border-green-200 rounded-2xl p-8 relative overflow-hidden group hover:border-green-500 transition-colors shadow-lg shadow-green-900/5 ring-4 ring-green-50"
           >
              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500" />
             
@@ -73,7 +73,7 @@ export function PilotProblems() {
                 <div className="p-1 bg-green-100 rounded-full">
                     <div className="w-2 h-2 bg-green-600 rounded-full" />
                 </div>
-                <span className="text-slate-700">Vento em multicamadas: <strong>50m, 100m, 150m</strong></span>
+                <span className="text-slate-700">Vento em multicamadas: <strong className="text-green-600 bg-green-50 px-1">50m, 100m, 150m</strong></span>
               </li>
                <li className="flex items-start gap-3">
                 <div className="p-1 bg-green-100 rounded-full">
@@ -85,7 +85,7 @@ export function PilotProblems() {
                 <div className="p-1 bg-green-100 rounded-full">
                     <div className="w-2 h-2 bg-green-600 rounded-full" />
                 </div>
-                <span className="text-slate-700">Comprovante de segurança gerado em 1 clique</span>
+                <span className="text-slate-700">Comprovante de segurança gerado em <strong className="text-green-600">1 clique</strong></span>
               </li>
             </ul>
 
