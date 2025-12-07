@@ -1,0 +1,120 @@
+Avatar Sheet — Drone Spraying Pilot
+(Brazil)
+🔍 Demographic & General Information
+● Age Range: 25–40 years
+● Gender: Predominantly male (≈80–95%)
+● Location: Interior regions — Mato Grosso (MT), Mato Grosso do Sul (MS), Paraná
+(PR), Goiás (GO), São Paulo (interior), Bahia (select regions)
+● Monthly Revenue: Typical net income R$4.000–R$8.000 / month (varies by season
+and fleet size)
+● Professional Backgrounds: former farm workers, agricultural machinery operators,
+agronomy/technical course graduates, mechanics/electronics technicians, former
+pesticide applicators (tractor-based)
+● Typical Identities: “professional pilot”, small-business owner, problem-solver,
+independent contractor, rural technologist
+🚩 Key Challenges & Pain Points
+1. Operational Safety & Weather Risk
+○ Wind at spray altitude causing drift and crop damage.
+○ Unexpected gusts and microclimates not predicted by standard weather apps.
+○ Need for altitude-specific wind data (50–150 m).
+2. Equipment Loss & Liability
+○ Drone crashes / flyaways → huge financial loss (tens to hundreds of
+thousands R$).
+○ Being held responsible by farmers for drift/damage.
+○ Limited or no insurance / slow claims process.
+3. Fragmented Tools & Bureaucracy
+○ Juggling multiple apps (weather, flight, mapping) that don't integrate.
+○ Poor rural connectivity (offline problems).
+○ Complex registration/compliance (ANAC/CAAR, MAPA) and paperwork
+burden.
+🌟 Goals & Aspirations
+● Short-Term Goals:
+○ Execute safe spray jobs this week without incident.
+○ Reduce input waste (chemicals) per hectare.
+○ Deliver proof (reports/photos) to the farmer to secure payment.
+● Long-Term Aspirations:
+○ Build a regional reputation as a reliable, professional pilot.
+○ Scale to a small fleet (2–5 drones) and hire a helper.
+○ Become the go-to contractor for cooperatives and large farms; increase
+monthly revenue substantially.
+🧠 Emotional Drivers & Psychological Insights
+● Pride & Professional Identity: Wants to be respected as a specialist, not a
+“hobbyist.”
+● Fear of Ruin: A crash can destroy business & reputation.
+● Desire for Autonomy: Prefers control — wants tools that make him decisively safe.
+● Distrust of Generic Tools: “One-size-fits-all” apps feel irrelevant to rural
+microclimates.
+● Peer Validation: Trusts recommendations from other pilots (WhatsApp groups,
+YouTube).
+💬 General Direct Client Quotes (Portuguese)
+● “Hoje quem tem crédito compra o drone parcelado… acham que estão prontos para
+pulverizar… pensando muito mais em retorno financeiro do que em qualidade.”
+("Today anyone with credit buys a drone on installments… they think they're ready to
+spray… focusing on profit, not application quality.")
+● “Pulverizaram a lavoura ao lado e matou a lavoura de café dele. Tem muita gente
+despreparada.”
+("They sprayed the neighboring field and killed his coffee crop. There are many
+unprepared people.")
+● “Se o drone cai, ninguém me paga o prejuízo.”
+("If the drone crashes, nobody pays my loss.")
+🚩 Pain Points & Frustrations (direct quotes)
+● “As previsões nunca batem com o tempo aqui no cerrado.” — frustration with
+weather forecasts not matching field reality.
+● “FlySafe às vezes trava setores sem aviso.” — anger at unexpected
+geofencing/no-fly locks.
+● “Os cursos são de dois dias e não preparam pra realidade.” — complaint about
+shallow training.
+🎯 Mindset Quotes
+● “Sou piloto profissional — não posso me dar ao luxo de errar.”
+("I’m a professional pilot—I can’t afford to make mistakes.")
+● “Prefiro perder um dia do que arriscar a aplicação e perder cliente.”
+("I’d rather lose one day than risk the application and lose the client.")
+● “Se eu mostrar relatório, ninguém questiona meu trabalho.”
+("If I show a report, no one questions my work.")
+🗣 Quotes on Emotional State and Personal Drivers
+● “Fico ansioso quando o vento sobe — parece que tudo pode dar errado.”
+("I get anxious when the wind picks up — it feels like everything can go wrong.")
+● “Quero que as fazendas me chamem de volta, quero respeito.”
+("I want farms to call me back, I want respect.")
+● “Ter prova de que eu voei em condições seguras me tira do aperto.”
+("Having proof I flew in safe conditions gets me out of trouble.")
+📢 Quotes on Emotional Responses to Struggles
+● “Quando erra, é vergonha na cara e prejuízo no bolso.”
+("When it goes wrong, it’s embarrassment and loss of money.")
+● “Ver o vizinho perder safra por deriva me deixa com raiva.”
+("Seeing a neighbor lose a crop to drift makes me angry.")
+● “A sensação de impotência é grande quando o sinal some no meio do campo.”
+("The feeling of helplessness is big when the signal disappears in the middle of the
+field.")
+🚀 Quotes on Motivation & Urgency Around Success
+● “Preciso fechar mais hectares este mês para pagar as parcelas do drone.”
+("I need to close more hectares this month to pay the drone installments.")
+● “Se eu conseguir impressionar um fazendeiro grande, meu negócio muda.”
+("If I impress one big farmer, my business changes.")
+● “Quando um concorrente quebra uma lavoura, há demanda imediata por quem faz
+certo.”
+("When a competitor damages a crop, there is immediate demand for those who do
+it right.")
+🚩 Key Emotional Fears & Deep Frustrations
+● Losing an expensive drone and losing livelihood.
+● Being blamed or sued for drift/crop damage.
+● Losing reputation in a tight local market.
+● Feeling unsupported by training/industry.
+● Technology that “fails in the field” (connectivity, geofencing surprises).
+🧠 Emotional & Psychographic Insights
+● Risk-averse but income-driven: willing to take calculated risks for higher pay, but
+terrified of catastrophic single events.
+● Community-reliant: heavily influenced by peer endorsements and testimonies.
+● Practical technophile: uses advanced gear but favors tools that are simple and
+dependable.
+● Status-seeking: badges, certifications, and visible proof of competence matter.
+📌 Typical Emotional Journey
+● Awareness: Learns about drones as a faster, higher-margin way to spray.
+Excitement & opportunity.
+● Frustration: Hits reality — weather unpredictability, app fragmentation, training gaps.
+Anxiety builds.
+● Desperation & Seeking Solutions: Looks for “one tool” to reduce uncertainty —
+joins groups, watches tutorials, asks peers.
+● Relief & Commitment: Finds workflows/tools that reduce risk (e.g., reliable flight
+checks, report generation). Commits to platform/subscription if it demonstrably
+protects reputation and pay.
