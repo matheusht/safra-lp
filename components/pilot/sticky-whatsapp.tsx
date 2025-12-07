@@ -6,7 +6,7 @@ export function StickyWhatsApp() {
   const [isHovered, setIsHovered] = useState(false)
   return (
     <a
-      href="https://api.whatsapp.com/send/?phone=5544999390748&text=Ol%C3%A1%21+Tenho+d%C3%BAvidas+sobre+o+PoDI.&type=phone_number&app_absent=0"
+      href="https://wa.me/5544999522514?text=Quero%20testar%20o%20Safra%20Fácil"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 sm:gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-2xl transition-all duration-300 group"

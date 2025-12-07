@@ -55,14 +55,17 @@ export function PilotHero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 h-12 shadow-lg shadow-green-200">
-                <a href="#provar" className='flex items-center'>
+                <a href="https://wa.me/5544999522514?text=Quero%20testar%20o%20Safra%20Fácil" target="_blank" rel="noopener noreferrer" className='flex items-center'>
                   Começar Teste Grátis
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 h-12 border-slate-300 text-slate-700 hover:bg-slate-50">
-                <Play className="mr-2 h-5 w-5" />
-                Ver Vídeo de 60s
+                <a href="https://wa.me/5544999522514?text=Quero%20ver%20uma%20demonstração%20do%20Safra%20Fácil" target="_blank" rel="noopener noreferrer" className='flex items-center'>
+                  <Play className="mr-2 h-5 w-5" />
+                  {/* Ver Vídeo de 60s */}
+                  Ver na prática
+                </a>
               </Button>
             </div>
 

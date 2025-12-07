@@ -74,7 +74,7 @@ export function PilotSolution() {
                     </p>
                      <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-slate-200 rounded-full overflow-hidden flex items-center justify-center">
-                             <div className="text-slate-500 text-xs font-bold">JS</div>
+                          <img src="pilot1.png" alt="Pilot profile picture" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <p className="text-slate-900 font-semibold">João Silva</p>
