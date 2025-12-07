@@ -14,6 +14,8 @@ export function MetaPixel() {
     // fbq is available on window after the script loads
     // @ts-ignore
     window.fbq('track', 'PageView')
+    // @ts-ignore
+    window.fbq('track', 'ViewContent')
   }, [pathname, loaded])
 
   return (
@@ -32,6 +34,8 @@ export function MetaPixel() {
           window.fbq('init', '835487246001840');
           // @ts-ignore
           window.fbq('track', 'PageView');
+          // @ts-ignore
+          window.fbq('track', 'ViewContent');
         }}
       />
     </div>
