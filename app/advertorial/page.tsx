@@ -29,9 +29,9 @@ export default function AdvertorialPage() {
               <Plane className="h-5 w-5 fill-current" /> Safra Fácil
             </div>
           </div>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 md:px-6 rounded-full text-sm transition-colors shadow-lg shadow-green-600/20">
+          <Link href="https://wa.me/5544999522514" target="_blank" className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 md:px-6 rounded-full text-sm transition-colors shadow-lg shadow-green-600/20">
             Começar Agora
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -433,7 +433,7 @@ export default function AdvertorialPage() {
                 <li>Semáforo verde/amarelo/vermelho</li>
                 <li>Histórico de 7 dias</li>
               </ul>
-              <button className="w-full py-2 bg-gray-100 rounded text-sm font-bold">Testar</button>
+              <Link href="https://wa.me/5544999522514" target="_blank" className="w-full py-2 bg-gray-100 rounded text-sm font-bold block text-center">Testar</Link>
             </div>
             {/* Pro */}
             <div className="border-2 border-green-500 rounded-lg p-4 text-center relative bg-green-50 transform scale-105 shadow-lg">
@@ -448,7 +448,7 @@ export default function AdvertorialPage() {
                 <li>✅ Modo Offline</li>
                 <li>✅ Exportação MAPA/ANAC</li>
               </ul>
-              <button className="w-full py-2 bg-green-600 text-white rounded text-sm font-bold">Escolher Pro</button>
+              <Link href="https://wa.me/5544999522514" target="_blank" className="w-full py-2 bg-green-600 text-white rounded text-sm font-bold block text-center">Escolher Pro</Link>
             </div>
             {/* Company */}
             <div className="border border-gray-200 rounded-lg p-4 text-center">
@@ -460,7 +460,7 @@ export default function AdvertorialPage() {
                 <li>Relatórios consolidados</li>
                 <li>API de integração</li>
               </ul>
-              <button className="w-full py-2 bg-gray-800 text-white rounded text-sm font-bold">Falar com Consultor</button>
+              <Link href="https://wa.me/5544999522514" target="_blank" className="w-full py-2 bg-gray-800 text-white rounded text-sm font-bold block text-center">Falar com Consultor</Link>
             </div>
           </div>
 
@@ -483,13 +483,13 @@ export default function AdvertorialPage() {
           {/* FINAL CTA */}
           <div className="text-center my-12">
             <h3 className="text-xl font-bold mb-6">Comece Agora — Teste Grátis Por 14 Dias</h3>
-            <button className="bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-4 px-10 rounded-full shadow-xl transform transition hover:-translate-y-1 mb-4 w-full md:w-auto">
+            <Link href="https://wa.me/5544999522514" target="_blank" className="bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-4 px-10 rounded-full shadow-xl transform transition hover:-translate-y-1 mb-4 w-full md:w-auto inline-block text-center">
               COMEÇAR TESTE GRÁTIS
-            </button>
+            </Link>
             <p className="text-sm text-gray-500 mb-2">Sem cartão de crédito. Sem compromisso.</p>
-            <p className="text-green-700 font-bold cursor-pointer hover:underline flex items-center justify-center gap-2">
+            <Link href="https://wa.me/5544999522514" target="_blank" className="text-green-700 font-bold cursor-pointer hover:underline flex items-center justify-center gap-2">
               <MessageCircle className="h-4 w-4" /> Falar com Suporte (WhatsApp)
-            </p>
+            </Link>
           </div>
 
           <div className="text-center italic text-gray-500 text-sm mb-12">
@@ -519,7 +519,7 @@ export default function AdvertorialPage() {
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 md:hidden z-50 shadow-[0_-5px_10px_rgba(0,0,0,0.05)] flex items-center justify-between">
         <div className="text-sm font-bold text-gray-800">Teste Grátis 14 Dias</div>
-        <button className="bg-green-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">Começar</button>
+        <Link href="https://wa.me/5544999522514" target="_blank" className="bg-green-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">Começar</Link>
       </div>
 
     </div>
