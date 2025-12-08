@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safra Fácil - Segurança para Pilotos de Drone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        .float-anim { animation: float 3s ease-in-out infinite; }
+        .pulse-danger { animation: pulse-red 2s infinite; }
+
+        .highlight-green {
+            background: linear-gradient(120deg, #d1fae5 0%, #d1fae5 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 90%;
+        }
+
+        /* Checkmark list style */
+        ul.checkmark-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.checkmark-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #16a34a; /* green-600 */
+        }
+        
+        /* Custom Paper Shadow for PDF Mockup */
+        .paper-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- Navbar -->
+    <nav class="border-b border-gray-100 py-4 sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <!-- Logo Placeholder -->
+                <div class="bg-green-700 text-white font-bold text-xl px-3 py-1 rounded select-none flex items-center gap-2">
+                    <i class="fas fa-drone"></i> Safra Fácil
+                </div>
+            </div>
+            <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 md:px-6 rounded-full text-sm transition-colors shadow-lg shadow-green-600/20">
+                Começar Agora
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-3xl mx-auto px-6 pt-12 pb-24">
+        
+        <!-- HERO / HEADLINE BLOCK -->
+        <div class="text-center mb-10">
+            <!-- The Hook -->
+            <p class="text-red-600 font-bold tracking-wide uppercase text-sm mb-3 animate-pulse">
+                <i class="fas fa-exclamation-triangle mr-2"></i>Alerta de Segurança Operacional
+            </p>
+            
+            <h1 class="text-3xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+                O Erro Que Está Custando Milhares aos <span class="highlight-green">Pilotos de Drone no Brasil</span>
+            </h1>
+            
+            <!-- The Fear/Conflict Angle -->
+            <p class="text-lg md:text-xl text-gray-500 font-medium italic mb-8">
+                E por que confiar no Windy, DJI e grupos de WhatsApp para tomar decisões de voo é como jogar na loteria com seu equipamento de R$100 mil.
+            </p>
+        </div>
+
+        <!-- VISUAL 1: The "Invisible Risk" Gauge -->
+        <div class="flex flex-col items-center justify-center mb-14">
+            <div class="bg-gray-900 text-white rounded-xl p-6 mb-6 shadow-xl w-full max-w-sm mx-auto relative overflow-hidden border border-gray-700">
+                <div class="absolute top-0 right-0 p-2 opacity-20"><i class="fas fa-wind text-6xl"></i></div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Monitor de Risco de Altitude</h4>
+                
+                <!-- Altitude Visualization -->
+                <div class="flex items-end space-x-4 h-32 mb-2">
+                    <!-- Ground Level -->
+                    <div class="w-1/2 flex flex-col justify-end items-center group">
+                        <div class="text-xs text-green-400 mb-1 font-bold">SOLO (0m)</div>
+                        <div class="w-full bg-green-500/20 border border-green-500 rounded-t-lg h-1/3 flex items-end justify-center pb-2 transition-all">
+                            <span class="text-lg font-bold">12 km/h</span>
+                        </div>
+                        <div class="mt-2 text-xs text-gray-400 text-center">O que o Windy mostra</div>
+                    </div>
+                    
+                    <!-- Altitude Level -->
+                    <div class="w-1/2 flex flex-col justify-end items-center relative">
+                        <div class="absolute -top-8 bg-red-600 text-white text-[10px] px-2 py-1 rounded animate-bounce">PERIGO INVISÍVEL</div>
+                        <div class="text-xs text-red-400 mb-1 font-bold">ALTITUDE (100m)</div>
+                        <div class="w-full bg-red-600/20 border border-red-500 rounded-t-lg h-full flex items-end justify-center pb-2 relative pulse-danger">
+                            <span class="text-lg font-bold">28 km/h</span>
+                        </div>
+                        <div class="mt-2 text-xs text-gray-400 text-center">A Realidade</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full border border-green-100">
+                <i class="fas fa-shield-alt text-green-600"></i>
+                <div class="text-sm font-semibold text-gray-700">
+                    Tecnologia usada por <span class="font-bold text-gray-900">Pilotos Profissionais</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADVERTORIAL BODY CONTENT -->
+        <article class="prose prose-lg prose-green mx-auto text-gray-700">
+            
+            <!-- STORY SECTION -->
+            <div class="mb-12 border-l-4 border-gray-200 pl-4">
+                <p class="font-bold text-gray-900">Maringá, PR — 6h30 da manhã, terça-feira.</p>
+                <p>
+                    João estava pronto para pulverizar 80 hectares de soja. Acordou cedo, carregou as baterias, calibrou os bicos, misturou o defensivo. O fazendeiro já tinha ligado duas vezes perguntando se ele ia voar hoje.
+                </p>
+                <p>
+                    Ele abriu o Windy no celular. Vento: 12 km/h. "Tranquilo", pensou. Abriu o UAV Forecast. KP Index: 3. "Dentro do aceitável." Entrou no grupo de WhatsApp. "Alguém voando hoje?" Silêncio.
+                </p>
+                <p>
+                    Ele decidiu voar. Aos 100 metros, o Agras T30 começou a oscilar. <strong>O vento lá em cima não era o mesmo do solo.</strong> A deriva começou. O defensivo viajou para o cafezal vizinho.
+                </p>
+                <p class="text-red-700 font-bold bg-red-50 p-2 inline-block rounded">
+                    Prejuízo: R$40 mil. E dois clientes perdidos.
+                </p>
+            </div>
+
+            <!-- VISUAL 2: THE FRAGMENTATION PROBLEM -->
+            <div class="my-14 relative">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                    <div class="w-full border-t border-gray-200"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="px-3 bg-white text-lg font-medium text-gray-500">A Armadilha da Fragmentação</span>
+                </div>
+                
+                <div class="grid grid-cols-5 gap-2 mt-6 max-w-md mx-auto opacity-70">
+                    <!-- Icons representing the fragmented apps -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-lg flex items-center justify-center mb-1"><i class="fas fa-wind"></i></div>
+                        <span class="text-[10px] text-gray-400">Vento</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 bg-purple-100 text-purple-500 rounded-lg flex items-center justify-center mb-1"><i class="fas fa-satellite"></i></div>
+                        <span class="text-[10px] text-gray-400">KP</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 bg-green-100 text-green-500 rounded-lg flex items-center justify-center mb-1"><i class="fab fa-whatsapp"></i></div>
+                        <span class="text-[10px] text-gray-400">Grupos</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 bg-yellow-100 text-yellow-500 rounded-lg flex items-center justify-center mb-1"><i class="fas fa-plane"></i></div>
+                        <span class="text-[10px] text-gray-400">Tráfego</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 bg-gray-100 text-gray-500 rounded-lg flex items-center justify-center mb-1"><i class="fas fa-question"></i></div>
+                        <span class="text-[10px] text-gray-400">Intuição</span>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-2 italic">Você gasta 30 min por dia nisso e ainda não tem certeza.</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">O Risco de Altitude Invisível</h2>
+            <p>
+                Os aplicativos que você usa mostram previsões de vento ao nível do solo. Mas você não pulveriza no solo. Você pulveriza entre 50 e 150 metros de altura.
+            </p>
+            <p>
+                Nessa altitude, existe o <strong>Microclima de Altitude</strong>. O vento pode estar calmo no chão e violento lá em cima. É a causa número 1 de deriva e acidentes. E quando algo dá errado, o fazendeiro olha pro Windy dele e diz: "Estava calmo, o erro foi seu."
+            </p>
+            <p>
+                Você não tem como provar o contrário. Até agora.
+            </p>
+
+            <!-- VISUAL 3: THE SOLUTION (TRAFFIC LIGHT) -->
+            <div class="bg-gray-900 rounded-2xl p-8 my-12 text-center relative overflow-hidden shadow-2xl">
+                <!-- Decorative background glow -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-green-600 rounded-full filter blur-[80px] opacity-20"></div>
+
+                <div class="relative z-10">
+                    <h3 class="text-white text-xl font-bold mb-6">Apresentando: Safra Fácil</h3>
+                    <p class="text-gray-400 mb-8 text-sm">O "Semáforo Inteligente" que analisa vento em altitude, KP e microclimas.</p>
+                    
+                    <div class="flex justify-center gap-6 mb-4">
+                        <!-- Traffic Light UI -->
+                        <div class="bg-gray-800 p-4 rounded-full flex flex-col gap-4 border-2 border-gray-700 shadow-inner">
+                            <div class="w-12 h-12 rounded-full bg-red-900 border border-red-800 opacity-30"></div>
+                            <div class="w-12 h-12 rounded-full bg-yellow-900 border border-yellow-800 opacity-30"></div>
+                            <div class="w-12 h-12 rounded-full bg-green-500 border border-green-400 shadow-[0_0_20px_rgba(34,197,94,0.6)] animate-pulse">
+                                <div class="w-full h-full flex items-center justify-center text-green-900 text-xl"><i class="fas fa-check"></i></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Data Card -->
+                        <div class="bg-gray-800 rounded-lg p-4 text-left border border-gray-700 w-48">
+                            <div class="text-[10px] text-gray-400 uppercase">Status</div>
+                            <div class="text-green-400 font-bold text-xl mb-2">SEGURO PARA VOAR</div>
+                            <div class="border-t border-gray-700 my-2"></div>
+                            <div class="flex justify-between text-xs text-gray-300 mb-1">
+                                <span>Vento 100m:</span> <span class="font-bold">11 km/h</span>
+                            </div>
+                            <div class="flex justify-between text-xs text-gray-300">
+                                <span>Index KP:</span> <span class="font-bold">2.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">A Diferença Entre o Amador e o Profissional</h2>
+            <p>
+                Você já ouviu isso: "Tem muita gente despreparada por aí." O que separa você deles não é só habilidade de voo, é a <strong>documentação</strong>.
+            </p>
+            <p>
+                O Safra Fácil gera o que chamamos de "Prova de Voo Seguro". É um registro auditável e imutável das condições exatas do momento em que você decolou.
+            </p>
+
+            <!-- VISUAL 4: THE PDF REPORT MOCKUP -->
+            <div class="my-14 flex justify-center perspective-1000">
+                <div class="bg-white p-6 md:p-8 rounded-lg border border-gray-200 paper-shadow w-full max-w-md transform rotate-1 hover:rotate-0 transition-transform duration-300 relative group cursor-pointer">
+                    <!-- Header of Report -->
+                    <div class="flex justify-between items-center border-b pb-4 mb-4">
+                        <div class="flex items-center gap-2 text-gray-600 font-bold"><i class="fas fa-file-contract"></i> RELATÓRIO DE OPERAÇÃO</div>
+                        <div class="text-xs text-gray-400">REF: #9823-AF</div>
+                    </div>
+                    <!-- Body of Report -->
+                    <div class="space-y-3">
+                        <div class="h-2 bg-gray-100 rounded w-3/4"></div>
+                        <div class="h-2 bg-gray-100 rounded w-full"></div>
+                        <div class="h-2 bg-gray-100 rounded w-5/6"></div>
+                        
+                        <!-- The "Proof" Data -->
+                        <div class="bg-green-50 p-3 rounded border border-green-100 mt-4">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fas fa-wind text-green-600 text-xs"></i>
+                                <span class="text-xs font-bold text-green-800">Vento (100m): 11 km/h (Seguro)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-satellite text-green-600 text-xs"></i>
+                                <span class="text-xs font-bold text-green-800">GPS/KP: 2.0 (Estável)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stamp -->
+                    <div class="absolute bottom-8 right-8 border-4 border-green-600 text-green-600 font-black text-xl px-2 py-1 transform -rotate-12 opacity-80 group-hover:opacity-100 transition-opacity">
+                        AUDITADO
+                    </div>
+                    <!-- Button Overlay -->
+                    <div class="absolute inset-0 bg-black/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                        <span class="bg-white px-4 py-2 rounded-full shadow-lg text-xs font-bold text-gray-800">Ver Exemplo PDF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mt-6 mb-3">6 Motivos Para Usar Safra Fácil</h3>
+                <ul class="checkmark-list">
+                    <li><strong>Semáforo Inteligente:</strong> Verde, Amarelo ou Vermelho. Sem ambiguidade.</li>
+                    <li><strong>Dados Multi-Altitude:</strong> Veja o vento a 50m, 100m e 150m separadamente.</li>
+                    <li><strong>Modo Offline Nativo:</strong> Cache de mapas na cidade, operação no campo sem sinal.</li>
+                    <li><strong>Prova Jurídica:</strong> Relatórios que servem como defesa em caso de deriva.</li>
+                    <li><strong>Tudo em Um Lugar:</strong> Clima, KP, logs e relatórios num só app.</li>
+                    <li><strong>Feito por Pilotos:</strong> Nada de funções inúteis de "gestão de fazenda".</li>
+                </ul>
+            </div>
+
+            <!-- OBJECTIONS & PRICE -->
+            <div class="bg-gray-50 rounded-2xl p-8 mb-12 border border-gray-100">
+                <h3 class="text-center text-2xl font-bold mb-6">Quanto Vale Sua Paz de Espírito?</h3>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="font-bold text-red-500 mb-2"><i class="fas fa-times-circle mr-2"></i>O Custo do Erro</p>
+                        <ul class="text-sm space-y-2 text-gray-600 mb-6">
+                            <li>• Drone Destruído: <strong>R$ 150.000</strong></li>
+                            <li>• Indenização Deriva: <strong>R$ 40.000</strong></li>
+                            <li>• Perda de Cliente: <strong>Incalculável</strong></li>
+                        </ul>
+                    </div>
+                    <div class="border-l border-gray-200 pl-8">
+                        <p class="font-bold text-green-600 mb-2"><i class="fas fa-check-circle mr-2"></i>Safra Fácil Pro</p>
+                        <div class="text-4xl font-black text-gray-900 mb-1">R$ 49<span class="text-lg font-normal text-gray-500">/mês</span></div>
+                        <p class="text-xs text-gray-500">Menos que um café por dia para proteger seu patrimônio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TESTIMONIALS -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">O Que Outros Pilotos Dizem</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white border border-gray-100 p-4 rounded-lg shadow-sm">
+                        <div class="flex text-yellow-400 text-xs mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-sm italic text-gray-600 mb-3">"Tive uma acusação de deriva que não era minha. Mostrei o relatório do Safra Fácil e o fazendeiro me defendeu. Caso encerrado."</p>
+                        <p class="text-xs font-bold">— Carlos T., Piloto em MS</p>
+                    </div>
+                    <div class="bg-white border border-gray-100 p-4 rounded-lg shadow-sm">
+                        <div class="flex text-yellow-400 text-xs mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-sm italic text-gray-600 mb-3">"O app me alertou de um KP alto que o UAV Forecast não mostrou. Não voei. Dois pilotos da região tiveram flyaway naquele dia."</p>
+                        <p class="text-xs font-bold">— André P., Paraná</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-12 rounded-2xl text-center my-10 shadow-2xl relative overflow-hidden group">
+                <!-- Decorative Circle -->
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-green-600 rounded-full opacity-20 blur-3xl group-hover:opacity-30 transition-opacity"></div>
+
+                <h3 class="text-white text-2xl md:text-3xl font-bold mb-4">Teste Grátis por 14 Dias</h3>
+                <p class="mb-8 text-gray-300">Gere seu primeiro relatório de voo em 5 minutos. Sem cartão de crédito necessário.</p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="bg-green-500 hover:bg-green-400 text-white font-bold text-lg py-4 px-8 rounded-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-green-500/30 w-full md:w-auto flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i> Começar Agora
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 mt-6 flex justify-center items-center gap-4">
+                    <span><i class="fas fa-wifi mr-1"></i> Modo Offline</span>
+                    <span><i class="fas fa-lock mr-1"></i> Dados Criptografados</span>
+                </p>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-sm border-t-4 border-green-600">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-gray-800 pb-8">
+                <div>
+                    <div class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fas fa-drone text-green-500"></i> Safra Fácil</div>
+                    <p>A plataforma de segurança operacional feita por pilotos, para pilotos.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-white">Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white">Suporte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contato</h4>
+                    <div class="flex gap-4 text-lg">
+                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2024 Safra Fácil Tecnologia. Todos os direitos reservados.</p>
+                <div class="mt-4 md:mt-0 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span>Sistemas Operacionais</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 md:hidden z-50 shadow-[0_-5px_10px_rgba(0,0,0,0.05)] flex items-center justify-between">
+        <div class="text-sm font-bold text-gray-800">
+            Teste Grátis Hoje
+        </div>
+        <button class="bg-green-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">
+            Baixar App
+        </button>
+    </div>
+
+</body>
+</html>

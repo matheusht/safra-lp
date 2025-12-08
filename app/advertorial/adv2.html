@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safra Fácil - O Erro Que Custa Milhares</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Animations */
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        .pulse-danger { animation: pulse-red 2s infinite; }
+        .pulse-safe { animation: pulse-green 2s infinite; }
+
+        .highlight-green {
+            background: linear-gradient(120deg, #d1fae5 0%, #d1fae5 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 90%;
+        }
+
+        /* Checkmark list style */
+        ul.checkmark-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.checkmark-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #16a34a; /* green-600 */
+        }
+        
+        .paper-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- Navbar -->
+    <nav class="border-b border-gray-100 py-4 sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-green-700 text-white font-bold text-xl px-3 py-1 rounded select-none flex items-center gap-2">
+                    <i class="fas fa-drone"></i> Safra Fácil
+                </div>
+            </div>
+            <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 md:px-6 rounded-full text-sm transition-colors shadow-lg shadow-green-600/20">
+                Começar Agora
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-3xl mx-auto px-6 pt-12 pb-24">
+        
+        <!-- HEADLINE BLOCK -->
+        <div class="text-center mb-10">
+            <p class="text-red-600 font-bold tracking-wide uppercase text-sm mb-3 animate-pulse">
+                <i class="fas fa-exclamation-triangle mr-2"></i>Alerta para Pilotos Profissionais
+            </p>
+            
+            <h1 class="text-3xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+                O Erro Que Está Custando Milhares aos <span class="highlight-green">Pilotos de Drone no Brasil</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-500 font-medium italic mb-8">
+                E por que confiar no Windy, DJI e grupos de WhatsApp para tomar decisões de voo é como jogar na loteria com seu equipamento de R$100 mil
+            </p>
+        </div>
+
+        <!-- ADVERTORIAL BODY -->
+        <article class="prose prose-lg prose-green mx-auto text-gray-700">
+            
+            <!-- SECTION: THE STORY -->
+            <div class="mb-10">
+                <p class="font-bold text-gray-900">Maringá, PR — 6h30 da manhã, terça-feira.</p>
+                <p>João estava pronto para pulverizar 80 hectares de soja. Acordou cedo, carregou as baterias, calibrou os bicos, misturou o defensivo. O fazendeiro já tinha ligado duas vezes perguntando se ele ia voar hoje.</p>
+                <p>Ele abriu o Windy no celular. Vento: 12 km/h. "Tranquilo", pensou.</p>
+                <p>Abriu o UAV Forecast. KP Index: 3. "Dentro do aceitável."</p>
+                <p>Entrou no grupo de WhatsApp dos pilotos da região. "Alguém voando hoje? Como tá o vento aí?"</p>
+                <p>Silêncio. Ninguém respondeu ainda.</p>
+                <p>João olhou para o céu. Parecia calmo. Ele tinha que decidir. O fazendeiro estava esperando. As parcelas do drone estavam vencendo. Ele precisava fechar esses hectares.</p>
+                <p class="font-bold">Ele decidiu voar.</p>
+                <p>Aos 100 metros de altitude, o Agras T30 começou a oscilar. O vento que o Windy mostrava no solo não era o mesmo vento lá em cima. As rajadas batiam de lado. A deriva começou.</p>
+                <p>A pulverização que deveria cair na soja do fazendeiro começou a viajar para o cafezal do vizinho.</p>
+                <p>Três dias depois, o vizinho apareceu na fazenda. As plantas de café estavam queimadas. Dano estimado: R$40 mil.</p>
+                <p>"Quem vai me pagar isso?" ele exigiu.</p>
+                <p>O fazendeiro apontou para João.</p>
+                <p>João não tinha como provar que as condições estavam seguras quando ele voou. Não tinha como provar que o vento mudou de repente. Não tinha como mostrar que ele tomou todas as precauções.</p>
+                <p>Ele só tinha as previsões genéricas do Windy — que nunca batem com o tempo real no cerrado — e algumas mensagens de WhatsApp que ninguém respondeu.</p>
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 my-6">
+                    <p class="font-bold text-red-800 m-0">João pagou os R$40 mil do próprio bolso. E perdeu os dois clientes.</p>
+                </div>
+            </div>
+
+            <!-- SECTION: THE DIAGNOSIS -->
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Por Que Isso Continua Acontecendo com Pilotos Profissionais?</h2>
+            <p>Se você é piloto de drone agrícola no Brasil, você já viveu alguma versão dessa história. Talvez você ainda não tenha enfrentado um prejuízo tão grande, mas você sente a ansiedade toda vez que precisa tomar a decisão de voar ou não.</p>
+            <p>Porque você sabe a verdade:</p>
+            <p><strong>Os aplicativos que você usa para verificar as condições de voo não foram feitos para pulverização agrícola no interior do Brasil.</strong></p>
+            
+            <p>Deixa eu explicar o problema real:</p>
+            <p>O Windy mostra vento no solo. Você voa a 100 metros.</p>
+            <p>O Windy, UAV Forecast, Climatempo — todos esses apps mostram previsões de vento ao nível do solo ou em camadas muito amplas da atmosfera.</p>
+            <p>Mas você não pulveriza no solo. Você pulveriza entre 50 e 150 metros de altura.</p>
+            <p>E nessa altitude, existe um fenômeno que a maioria dos pilotos não percebe até ser tarde demais:</p>
+            <p class="font-bold text-lg">Microclimas de altitude.</p>
+            <p>O vento ao nível do solo pode estar a 10 km/h. Mas a 100 metros? Pode estar batendo 25 km/h em rajadas laterais que você não vê, não sente, e seu app genérico não prevê.</p>
+
+            <!-- VISUAL 1: RISK GAUGE -->
+            <div class="my-10 bg-gray-900 rounded-xl p-6 shadow-xl w-full max-w-md mx-auto border border-gray-700 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-2 opacity-10"><i class="fas fa-wind text-8xl text-white"></i></div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-6 text-center">Monitor de Risco de Altitude</h4>
+                <div class="flex items-end justify-center gap-6 h-32">
+                    <!-- Ground -->
+                    <div class="w-1/3 flex flex-col items-center">
+                        <div class="text-xs text-green-400 mb-1 font-bold">SOLO (0m)</div>
+                        <div class="w-full bg-green-500/20 border border-green-500 rounded-t-lg h-12 flex items-center justify-center">
+                            <span class="text-sm font-bold text-white">10 km/h</span>
+                        </div>
+                        <div class="mt-2 text-[10px] text-gray-500 text-center">O que você vê</div>
+                    </div>
+                    <!-- Altitude -->
+                    <div class="w-1/3 flex flex-col items-center relative">
+                        <div class="absolute -top-6 bg-red-600 text-white text-[9px] px-2 py-0.5 rounded animate-bounce font-bold">PERIGO</div>
+                        <div class="text-xs text-red-400 mb-1 font-bold">100m</div>
+                        <div class="w-full bg-red-600/20 border border-red-500 rounded-t-lg h-full flex items-start justify-center pt-2 pulse-danger">
+                            <span class="text-xl font-bold text-white">25 km/h</span>
+                        </div>
+                        <div class="mt-2 text-[10px] text-gray-500 text-center">A Realidade</div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Isso é o que chamamos de "Risco de Altitude Invisível" — a causa número 1 de deriva, oscilação de drone, e acidentes evitáveis.</p>
+            <p>E o pior: quando você causa deriva ou tem um incidente, você não tem nenhuma prova de que as condições estavam diferentes do que os apps mostravam.</p>
+            <p>O fazendeiro olha pro Windy dele. Vê que estava "12 km/h, sol, tranquilo."</p>
+            <p>E ele fala: "Então foi erro seu, piloto."</p>
+
+            <!-- SECTION: FRAGMENTATION -->
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">A Armadilha da Fragmentação: Por Que Fazer Malabarismo com 5 Apps Não É "Profissionalismo"</h2>
+            <p>Aqui está o que a maioria dos pilotos faz antes de cada voo:</p>
+            <ul class="list-none pl-0 space-y-2">
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Abre o Windy pra ver vento e temperatura</li>
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Abre o UAV Forecast pra checar KP e condições de GPS</li>
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Abre o FlightRadar24 pra ver se tem aeronave na área</li>
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Abre o DJI Fly ou FlySafe pra verificar zonas de restrição</li>
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Entra no grupo de WhatsApp pra perguntar "alguém voando hoje?"</li>
+                <li class="flex items-start"><i class="fas fa-times text-red-400 mt-1.5 mr-2"></i> Olha pro céu e torce pra intuição estar certa</li>
+            </ul>
+
+            <!-- VISUAL 2: FRAGMENTATION ICONS -->
+            <div class="my-8 relative py-6">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                    <div class="w-full border-t border-gray-200"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="px-4 bg-white text-sm font-medium text-gray-400 uppercase tracking-widest">30 min/dia perdidos</span>
+                </div>
+                <div class="flex justify-center gap-4 mt-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div class="text-center"><i class="fas fa-wind text-3xl text-blue-400 mb-1"></i><div class="text-[10px]">Vento</div></div>
+                    <div class="text-center"><i class="fas fa-satellite text-3xl text-purple-400 mb-1"></i><div class="text-[10px]">KP</div></div>
+                    <div class="text-center"><i class="fab fa-whatsapp text-3xl text-green-500 mb-1"></i><div class="text-[10px]">Grupos</div></div>
+                    <div class="text-center"><i class="fas fa-plane text-3xl text-yellow-500 mb-1"></i><div class="text-[10px]">Tráfego</div></div>
+                    <div class="text-center"><i class="fas fa-brain text-3xl text-pink-400 mb-1"></i><div class="text-[10px]">Intuição</div></div>
+                </div>
+            </div>
+
+            <p>Você gasta 20-30 minutos todo dia fazendo isso.</p>
+            <p>E no final, você ainda não tem certeza. Porque nenhum desses apps foi feito pra responder a pergunta que você realmente precisa saber:</p>
+            <p class="font-bold italic">"Está seguro pra EU pulverizar AQUI, AGORA, na altitude que EU vou voar?"</p>
+            <p>O Windy não sabe. Ele mostra dados gerais pra parapentes e pilotos recreativos.</p>
+            <p>O UAV Forecast não sabe. Ele foi feito para hobby drones que voam a 30 metros filmando paisagem.</p>
+            <p>O grupo de WhatsApp? Depende se alguém vai responder a tempo.</p>
+            <p>E você fica ali, fragmentado, tentando juntar pedaços de informação de cinco fontes diferentes pra tomar uma decisão de R$100 mil.</p>
+            <p>Não é à toa que você fica ansioso. Não é à toa que você sente aquela sensação de impotência quando o sinal some no meio do campo.</p>
+            <p>Você está tomando decisões profissionais com ferramentas amadoras.</p>
+            <p>E o mercado sabe disso.</p>
+
+            <!-- SECTION: PROFESSIONALISM -->
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">O Que Separa o Piloto Profissional do "Despreparado"?</h2>
+            <p>Você já ouviu isso nos grupos, nas fazendas, nos cursos:</p>
+            <p class="italic">"Tem muita gente despreparada pulverizando por aí."</p>
+            <p class="italic">"Hoje quem tem crédito compra o drone parcelado e acha que está pronto."</p>
+            <p class="italic">"Pulverizaram a lavoura ao lado e matou a lavoura de café dele."</p>
+            <p>Você odeia ser associado a esses amadores. Porque você não é amador.</p>
+            <p>Você é piloto profissional. Você fez o curso. Você tem CAAR. Você investe em equipamento de ponta. Você leva segurança a sério.</p>
+            <p>Mas aqui está a verdade dura:</p>
+            <p>Se você está usando as mesmas ferramentas que o cara que comprou o drone parcelado semana passada, aos olhos do fazendeiro, vocês são iguais.</p>
+            <p>O que separa o profissional do amador não é só habilidade de voo.</p>
+            <p><strong>É prova documentada de que você opera com padrões diferentes.</strong></p>
+            <p>É ter um sistema que:</p>
+            <ul class="checkmark-list">
+                <li>Mostra que você checou todas as condições antes de voar</li>
+                <li>Prova que você tomou a decisão certa baseado em dados específicos da sua operação</li>
+                <li>Gera relatórios que ninguém pode questionar</li>
+            </ul>
+            <p>Porque no fim das contas, quando algo dá errado (ou quando acusam que algo deu errado), não importa o que você "sabia" ou "sentiu."</p>
+            <p>Importa o que você pode provar.</p>
+            <p>E se você está usando Windy + WhatsApp + intuição? Você não pode provar nada.</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Por Que as Ferramentas "Boas o Suficiente" Estão Colocando Seu Negócio em Risco</h2>
+            <p>Vamos ser diretos sobre o que está em jogo: Um único erro de decisão pode acabar com você.</p>
+            <p>Não estamos falando de perder um dia de trabalho. Estamos falando de:</p>
+            <ul class="list-disc pl-5">
+                <li>Perda de equipamento: R$100-200 mil em drone destruído</li>
+                <li>Responsabilidade civil: R$30-50 mil em danos a lavouras vizinhas</li>
+                <li>Perda de reputação: Fazendeiros pararem de te chamar</li>
+                <li>Perda de contratos futuros: Cooperativas te removerem da lista de aprovados</li>
+            </ul>
+            <p>E você sabe o pior?</p>
+            <p class="font-bold">"Se o drone cai, ninguém me paga o prejuízo."</p>
+            <p>Você já falou isso. Todo piloto já falou isso.</p>
+            <p>Porque é verdade. Você é o único responsável. Não tem seguro que cubra decisões "questionáveis." Não tem fazendeiro que vai bancar seu erro.</p>
+            <p>Então por que diabos você ainda está confiando em apps genéricos que não foram feitos pra sua realidade?</p>
+            <p>Por que você ainda está adivinhando se pode voar, quando sua empresa inteira depende de acertar essa decisão todo santo dia?</p>
+            <p>A resposta honesta? Porque até agora, não existia alternativa.</p>
+            <p>Até agora.</p>
+
+            <!-- SECTION: SOLUTION INTRO -->
+            <div class="bg-gray-900 text-white p-8 rounded-2xl my-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-green-600 rounded-full filter blur-[100px] opacity-20"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 relative z-10">Apresentando: Safra Fácil — A Única Plataforma Construída Especificamente Para Pilotos de Pulverização Agrícola no Brasil</h2>
+                <p class="text-gray-300 relative z-10">Safra Fácil não é mais um app de clima genérico. Não é mais um "gerenciador de fazenda" que tenta fazer tudo e não faz nada bem.</p>
+                <p class="text-gray-300 relative z-10">É a primeira e única plataforma projetada do zero para resolver o problema real dos pilotos de drone agrícola brasileiros:</p>
+                <p class="font-bold text-green-400 text-lg relative z-10">Eliminar a adivinhação. Eliminar a fragmentação. Eliminar a vulnerabilidade.</p>
+            </div>
+
+            <p>Aqui está como funciona:</p>
+
+            <!-- FEATURE 1 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">1. Dados de Vento Multi-Altitude — Veja O Que Está Acontecendo Onde Você Realmente Voa</h3>
+            <p>Enquanto o Windy te mostra "12 km/h no solo," o Safra Fácil te mostra:</p>
+            <ul class="list-disc pl-5">
+                <li>Vento a 50 metros (sua altitude de aproximação)</li>
+                <li>Vento a 100 metros (sua altitude de pulverização)</li>
+                <li>Vento a 150 metros (sua altitude máxima de operação)</li>
+            </ul>
+            <p>Você vê exatamente as camadas de vento invisíveis que causam deriva e oscilação. Não mais adivinhar. Não mais "parece tranquilo." Não mais rezar que o vento não mude quando você subir. Você sabe. Com dados específicos da altitude que você vai operar.</p>
+
+            <!-- FEATURE 2 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">2. Monitoramento KP Localizado — GPS Confiável ou Flyaway Esperando Pra Acontecer?</h3>
+            <p>Você já teve aquele momento de pânico quando o drone começa a derivar porque o GPS perdeu precisão?</p>
+            <p>O Safra Fácil monitora o índice KP geomagnético localizado e te alerta antes de você decolar se o GPS vai estar instável. Porque um drone de R$150 mil em flyaway não é "azar." É falta de informação que você poderia ter tido.</p>
+
+            <!-- FEATURE 3 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">3. Sistema de Semáforo Inteligente — Verde, Amarelo ou Vermelho. Sem Ambiguidade.</h3>
+            <p>Baseado em todos os fatores (vento multi-altitude, KP, condições locais, histórico do campo), o Safra Fácil te dá uma resposta clara:</p>
+            <ul class="list-none pl-0 mb-6">
+                <li class="flex items-center gap-2 font-bold text-green-700"><span class="w-3 h-3 rounded-full bg-green-500"></span> 🟢 VERDE: Condições seguras. Voe com confiança.</li>
+                <li class="flex items-center gap-2 font-bold text-yellow-600"><span class="w-3 h-3 rounded-full bg-yellow-500"></span> 🟡 AMARELO: Condições marginais. Ajuste parâmetros ou adie.</li>
+                <li class="flex items-center gap-2 font-bold text-red-600"><span class="w-3 h-3 rounded-full bg-red-600"></span> 🟠 VERMELHO: Condições perigosas. Não voe.</li>
+            </ul>
+            <p>Não mais ficar 30 minutos analisando cinco apps diferentes tentando "interpretar" se dá ou não dá. Uma olhada. Uma resposta. Uma decisão profissional.</p>
+
+            <!-- VISUAL 3: TRAFFIC LIGHT -->
+            <div class="my-8 flex justify-center">
+                <div class="bg-gray-800 p-6 rounded-2xl flex items-center gap-6 shadow-xl border border-gray-700">
+                    <div class="flex flex-col gap-3 bg-gray-900 p-3 rounded-full border border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-red-900/50 border border-red-900"></div>
+                        <div class="w-10 h-10 rounded-full bg-yellow-900/50 border border-yellow-900"></div>
+                        <div class="w-10 h-10 rounded-full bg-green-500 border border-green-400 shadow-[0_0_15px_rgba(34,197,94,0.6)] animate-pulse flex items-center justify-center text-green-900 font-bold"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-400 uppercase tracking-widest mb-1">Status Atual</div>
+                        <div class="text-2xl font-bold text-green-400">SEGURO</div>
+                        <div class="text-sm text-gray-500">Vento 100m: 11 km/h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURE 4 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">4. "Prova de Voo Seguro" com Um Clique — O Seu Escudo Contra Responsabilidade</h3>
+            <p>Aqui está a funcionalidade que muda tudo: Quando você clica em "Iniciar Operação" no Safra Fácil, o sistema tira um snapshot imutável de todas as condições naquele momento:</p>
+            <ul class="list-disc pl-5">
+                <li>Vento em cada altitude</li>
+                <li>KP Index</li>
+                <li>Temperatura e umidade</li>
+                <li>Hora exata</li>
+                <li>Localização GPS do campo</li>
+                <li>Status do semáforo (verde/amarelo/vermelho)</li>
+            </ul>
+            <p>Isso gera um registro hasheado e auditável — impossível de alterar depois — que prova exatamente quais eram as condições quando você decidiu voar. No final da operação, você gera um PDF profissional em 1 clique com todos esses dados.</p>
+            <p>Esse PDF serve como:</p>
+            <ul class="checkmark-list">
+                <li>Prova pro fazendeiro de que você agiu com responsabilidade</li>
+                <li>Documentação pra seguradora (se você tiver)</li>
+                <li>Defesa legal se alguém te acusar de deriva</li>
+                <li>Evidência pra MAPA/ANAC em caso de fiscalização</li>
+                <li>Diferencial competitivo pra ganhar contratos com cooperativas</li>
+            </ul>
+
+            <!-- VISUAL 4: PDF MOCKUP -->
+            <div class="my-12 flex justify-center perspective-1000 group">
+                <div class="bg-white w-64 h-80 border border-gray-200 paper-shadow p-5 relative transform transition-transform duration-500 hover:rotate-2 hover:scale-105">
+                    <div class="border-b pb-2 mb-3 flex justify-between items-center">
+                        <div class="text-[10px] font-bold text-gray-500">RELATÓRIO DE VOO</div>
+                        <div class="text-[8px] text-gray-300">#AF-9920</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="h-1.5 bg-gray-100 w-3/4"></div>
+                        <div class="h-1.5 bg-gray-100 w-full"></div>
+                        <div class="bg-green-50 p-2 rounded border border-green-100 mt-2">
+                            <div class="text-[9px] font-bold text-green-800">Condições: VERDE</div>
+                            <div class="text-[8px] text-green-600">Vento 100m: 11km/h</div>
+                        </div>
+                        <div class="h-24 bg-gray-50 rounded border border-gray-100 mt-2 flex items-center justify-center">
+                            <i class="fas fa-map-marked-alt text-gray-200 text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-4 right-4 border-2 border-green-600 text-green-600 text-[10px] font-black px-1 transform -rotate-12 opacity-80">
+                        AUDITADO
+                    </div>
+                </div>
+            </div>
+
+            <p>"Se eu mostrar relatório, ninguém questiona meu trabalho." Agora você tem esse relatório. Todo dia. Toda operação. Prova indiscutível.</p>
+
+            <!-- FEATURE 5 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">5. Funciona Offline — Porque Você Não Pulveriza em Shopping Center</h3>
+            <p>73% das fazendas brasileiras não têm internet boa. O Safra Fácil foi construído sabendo disso. Você faz cache dos mapas e dados meteorológicos quando tem sinal (na cidade, no hotel, na sede da fazenda). No campo, tudo funciona offline. Registra tudo localmente. Quando você voltar pra área com sinal, sincroniza automaticamente.</p>
+            <p>Não mais "a sensação de impotência quando o sinal some no meio do campo." Você opera. O app registra. Acabou.</p>
+
+            <!-- FEATURE 6 -->
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-2">6. Tudo em Um Lugar — Acabou o Malabarismo de Apps</h3>
+            <p>Dentro do Safra Fácil você tem:</p>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+                <div>✅ Dados meteorológicos multi-altitude</div>
+                <div>✅ Notas e observações do piloto</div>
+                <div>✅ Monitoramento KP em tempo real</div>
+                <div>✅ Geração de relatórios PDF</div>
+                <div>✅ Histórico de voos e operações</div>
+                <div>✅ Exportação pra MAPA/ANAC</div>
+                <div>✅ Registro de volume/hectare</div>
+                <div>✅ Resumos prontos pra WhatsApp</div>
+                <div>✅ Fotos georreferenciadas</div>
+            </div>
+            <p class="mt-4">Um app. Uma plataforma. Uma decisão. Você nunca mais precisa alternar entre Windy, UAV Forecast, DJI, WhatsApp, e rezar pra que a intuição feche o pacote.</p>
+
+            <!-- SECTION: OBJECTIONS -->
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Por Que Safra Fácil Funciona Quando Outras "Soluções" Falham</h2>
+            <p>Vamos ser honestos sobre por que você nunca adotou um "sistema de gestão" antes:</p>
+
+            <div class="space-y-6 mt-6">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-bold text-lg mb-2">Objeção #1: "É muito caro pro meu negócio."</h4>
+                    <p>Vamos fazer a conta real:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Custo do Safra Fácil: R$49-99/mês (menos que o tanque de gasolina da sua pickup)</li>
+                        <li>Custo de UM drone que cai: R$150.000</li>
+                        <li>Custo de UM processo por deriva: R$40.000</li>
+                        <li>Custo de perder UM contrato grande: R$15.000+</li>
+                    </ul>
+                    <p>Você precisa prevenir UMA catástrofe a cada 100-200 ANOS pra o Safra Fácil se pagar. Na prática? Se o app te faz evitar uma decisão ruim por ano, ele se pagou 500 vezes. Não é custo. É seguro operacional.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-bold text-lg mb-2">Objeção #2: "Não tenho tempo pra aprender outra ferramenta."</h4>
+                    <p>Entendemos. Você já tem DJI, já tem Windy, já tem sua rotina. Por isso o Safra Fácil foi desenhado pra você gerar valor no primeiro uso.</p>
+                    <p>Baixa o app → Define sua localização → Sistema já mostra janela de pulverização de hoje → Você gera seu primeiro PDF de prova em 3 minutos.</p>
+                    <p>Não tem "fase de implementação." Não tem curso de 40 horas. Instala. Usa. Pronto.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-bold text-lg mb-2">Objeção #3: "E se não funcionar sem internet?"</h4>
+                    <p>Já respondemos isso, mas vale repetir porque é crítico: Modo offline é nativo, não é "recurso adicional." Você faz cache antes. Opera sem sinal. Sincroniza depois. Testado em Mato Grosso, Goiás, interior de SP — lugares onde o 4G é uma piada. Funciona. Ponto.</p>
+                </div>
+            </div>
+
+            <!-- More objections continued inline for brevity as per copy request -->
+            <p class="mt-6 font-bold">Objeção #4: "Como sei que os dados são precisos? E se o app errar e eu cair mesmo assim?"</p>
+            <p>Ótima pergunta. Primeiro: O Safra Fácil usa fontes meteorológicas profissionais (não dados de hobby) com modelagem específica pra microclimatologia agrícola brasileira.</p>
+            <p>Segundo: O sistema não te garante que nunca vai ter acidente. Nenhuma ferramenta pode garantir isso. O que o Safra Fácil garante é:</p>
+            <ol class="list-decimal pl-5">
+                <li>Você terá muito mais informação do que qualquer piloto usando Windy + intuição</li>
+                <li>Você terá prova documentada de que tomou decisões baseadas em dados profissionais</li>
+                <li>Você estará operando no padrão que cooperativas e seguradoras reconhecem como responsável</li>
+            </ol>
+            <p>Se algo der errado (vento extremo inesperado, falha mecânica, etc.), você tem o relatório provando que você não foi negligente. Isso muda tudo numa disputa legal ou comercial.</p>
+
+            <p class="mt-6 font-bold">Objeção #5: "Meus dados ficam seguros? Vocês vão vender minha lista de clientes?"</p>
+            <p>Seus dados são seus. Ponto final. O Safra Fácil não compartilha, não vende, não "monetiza" sua lista de fazendeiros. Os relatórios que você gera ficam armazenados de forma criptografada na nuvem (com backup, ao contrário do seu caderno de papel que pode pegar fogo). E você pode exportar tudo a qualquer momento em PDF ou Excel.</p>
+
+            <p class="mt-6 font-bold">Objeção #6: "O PDF é aceito por MAPA/ANAC/Seguradora?"</p>
+            <p>Os relatórios do Safra Fácil seguem os templates de documentação recomendados por MAPA pra registro de aplicação aérea. Eles incluem todos os campos obrigatórios. Isso significa que você pode usar os PDFs como comprovação de serviço, documentação de conformidade e evidência legal. Você estará na frente da curva, não correndo atrás.</p>
+
+            <!-- SECTION: DAY IN THE LIFE -->
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Como Safra Fácil Funciona na Prática: Um Dia na Vida do Piloto Profissional</h2>
+            <div class="border-l-2 border-green-200 ml-4 space-y-8 pl-6 relative">
+                <!-- Timeline items -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] bg-green-500 w-4 h-4 rounded-full border-2 border-white"></span>
+                    <h4 class="font-bold">5h30 da manhã</h4>
+                    <p class="text-sm">Você acorda. Toma café. Pega o celular. Abre o Safra Fácil. A tela inicial já mostra: 🟢 "Janela de pulverização hoje: 06:00 - 09:30". Você vê que tá verde. Você já sabe que pode voar. Não abriu 5 apps. Não ficou na dúvida.</p>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-[31px] bg-green-500 w-4 h-4 rounded-full border-2 border-white"></span>
+                    <h4 class="font-bold">6h15 — No campo</h4>
+                    <p class="text-sm">Você clica em "Iniciar Operação." O app registra: Fazenda São José, 80ha, Talhão 3. Status: 🟢 VERDE. Você decola. Você pulveriza. Tranquilo.</p>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-[31px] bg-green-500 w-4 h-4 rounded-full border-2 border-white"></span>
+                    <h4 class="font-bold">8h45 — Operação concluída</h4>
+                    <p class="text-sm">Você pousa. Clica em "Finalizar Operação." O app pergunta: "Gerar relatório?" Você clica "Sim." 10 segundos depois, você tem um PDF profissional. Você clica em "Enviar por WhatsApp." O fazendeiro recebe. Ele vê que você é diferente.</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Safra Fácil Não É Só Um App. É O Seu Distintivo de Piloto Profissional.</h2>
+            <p>Aqui está a verdade que ninguém fala: No mercado de pulverização, você não compete só com habilidade. Você compete com confiança.</p>
+            <p>Fazendeiros contratam pilotos que eles confiam. Cooperativas aprovam pilotos que demonstram padrões. Seguradoras cobrem operações que têm documentação.</p>
+            <p>E o piloto que chega com relatório profissional, dados de altitude, registro imutável? Esse cara não é visto como "mais um piloto." Ele é visto como especialista.</p>
+            <p>Quando o concorrente chega com "confiei no Windy e deu certo," e você chega com "aqui está o relatório completo da operação, todas as condições registradas, tudo dentro dos parâmetros de segurança"... Não tem comparação.</p>
+            <p>Você se separa dos "despreparados."</p>
+
+            <!-- TESTIMONIALS -->
+            <div class="bg-green-50 rounded-xl p-8 my-12">
+                <h3 class="text-xl font-bold text-center mb-8">O Que Outros Pilotos Estão Dizendo</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-sm italic mb-2">"Antes eu perdia 40 minutos todo dia checando clima em três apps. Agora eu abro Safra Fácil, vejo o semáforo verde, e vou. Economizei horas e ganhei paz de espírito."</p>
+                        <p class="text-xs font-bold text-green-700">— Ricardo M., piloto em Goiás, 4 anos de experiência</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-sm italic mb-2">"Tive uma acusação de deriva que eu sabia que não era minha. Mostrei o relatório do Safra Fácil provando que o vento tava dentro dos limites quando eu voei. O fazendeiro me defendeu. Caso encerrado."</p>
+                        <p class="text-xs font-bold text-green-700">— Carlos T., piloto em MS</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-sm italic mb-2">"O PDF que o app gera impressiona. Cooperativa onde eu trabalho agora exige de todos os pilotos terceirizados. Quem não tem, não entra."</p>
+                        <p class="text-xs font-bold text-green-700">— Fernanda S., piloto em SP</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-sm italic mb-2">"Eu era cético. Achei que era mais um app inútil. Testei de graça. No terceiro dia, o app me alertou de um KP alto que eu não tinha visto. Não voei. Dois pilotos da região tiveram flyaway naquele dia. Valeu cada centavo."</p>
+                        <p class="text-xs font-bold text-green-700">— André P., Paraná</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRICING -->
+            <h2 class="text-2xl font-bold text-center mb-6">Quanto Custa Operar Como Profissional?</h2>
+            <div class="grid md:grid-cols-3 gap-4 mb-12">
+                <!-- Basic -->
+                <div class="border border-gray-200 rounded-lg p-4 text-center">
+                    <h3 class="font-bold text-lg">Básico</h3>
+                    <div class="text-gray-500 text-sm mb-4">Gratuito</div>
+                    <ul class="text-xs text-left space-y-2 mb-4">
+                        <li>Dashboard básico</li>
+                        <li>Semáforo verde/amarelo/vermelho</li>
+                        <li>Histórico de 7 dias</li>
+                    </ul>
+                    <button class="w-full py-2 bg-gray-100 rounded text-sm font-bold">Testar</button>
+                </div>
+                <!-- Pro -->
+                <div class="border-2 border-green-500 rounded-lg p-4 text-center relative bg-green-50 transform scale-105 shadow-lg">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white text-[10px] px-2 py-0.5 rounded font-bold">RECOMENDADO</div>
+                    <h3 class="font-bold text-lg">Pro Piloto</h3>
+                    <div class="text-3xl font-black text-gray-900">R$49<span class="text-sm font-normal text-gray-500">/mês</span></div>
+                    <p class="text-[10px] text-gray-500 mb-4">Menos que um café/dia</p>
+                    <ul class="text-xs text-left space-y-2 mb-4">
+                        <li>✅ Dados multi-altitude ilimitados</li>
+                        <li>✅ Monitoramento KP real</li>
+                        <li>✅ PDFs ilimitados "Prova de Voo"</li>
+                        <li>✅ Modo Offline</li>
+                        <li>✅ Exportação MAPA/ANAC</li>
+                    </ul>
+                    <button class="w-full py-2 bg-green-600 text-white rounded text-sm font-bold">Escolher Pro</button>
+                </div>
+                <!-- Company -->
+                <div class="border border-gray-200 rounded-lg p-4 text-center">
+                    <h3 class="font-bold text-lg">Empresa</h3>
+                    <div class="text-2xl font-bold text-gray-900">R$299<span class="text-sm font-normal text-gray-500">/mês</span></div>
+                    <ul class="text-xs text-left space-y-2 mb-4 mt-4">
+                        <li>Multi-piloto (até 10)</li>
+                        <li>Dashboard de frota</li>
+                        <li>Relatórios consolidados</li>
+                        <li>API de integração</li>
+                    </ul>
+                    <button class="w-full py-2 bg-gray-800 text-white rounded text-sm font-bold">Falar com Consultor</button>
+                </div>
+            </div>
+
+            <!-- GUARANTEE -->
+            <div class="bg-gray-50 border border-gray-200 p-6 rounded-lg text-center mb-10">
+                <i class="fas fa-shield-alt text-4xl text-green-600 mb-3"></i>
+                <h3 class="font-bold text-xl mb-2">Garantia de 30 Dias — Risco Zero</h3>
+                <p class="text-sm text-gray-600 mb-4">Nós sabemos que você é cauteloso. Deve ser. Você opera equipamento de R$150 mil. Por isso oferecemos:</p>
+                <p class="font-bold mb-4">Teste o Safra Fácil por 30 dias. Se você achar que não valeu, reembolsamos 100%. Sem perguntas.</p>
+                <p class="text-sm text-gray-600">Você vai usar uma vez. Vai ver o semáforo. Vai sentir o alívio. E você vai perceber: "Como eu operava sem isso antes?"</p>
+            </div>
+
+            <!-- CLOSING -->
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">A Decisão Que Separa Sua Carreira Nos Próximos 12 Meses</h2>
+            <p>Vamos ser diretos. Você está num mercado que cresce 40% ao ano. A demanda é alta. Os fazendeiros querem precisão. Mas o mercado também está ficando saturado de pilotos despreparados.</p>
+            <p>Esses pilotos vão causar acidentes. Vão queimar lavouras. Vão destruir a reputação da categoria. E quando isso acontecer, sabe quem vai sobreviver?</p>
+            <p class="font-bold">Os pilotos que conseguem provar que operam diferente. Os pilotos que mostram relatórios. Os pilotos que têm dados.</p>
+            <p>A pergunta é: Você quer ser um deles? Ou quer continuar competindo com amadores usando as mesmas ferramentas que eles?</p>
+
+            <!-- FINAL CTA -->
+            <div class="text-center my-12">
+                <h3 class="text-xl font-bold mb-6">Comece Agora — Teste Grátis Por 14 Dias</h3>
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-4 px-10 rounded-full shadow-xl transform transition hover:-translate-y-1 mb-4 w-full md:w-auto">
+                    COMEÇAR TESTE GRÁTIS
+                </button>
+                <p class="text-sm text-gray-500 mb-2">Sem cartão de crédito. Sem compromisso.</p>
+                <p class="text-green-700 font-bold cursor-pointer hover:underline"><i class="fab fa-whatsapp"></i> Falar com Suporte (WhatsApp)</p>
+            </div>
+
+            <div class="text-center italic text-gray-500 text-sm mb-12">
+                "Prefiro perder um dia do que arriscar a aplicação e perder cliente."<br>
+                E se você não precisasse mais escolher?
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-sm border-t-4 border-green-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-white font-bold text-xl mb-2 flex justify-center items-center gap-2"><i class="fas fa-drone"></i> Safra Fácil</h3>
+            <p class="mb-6">A plataforma de segurança operacional para pilotos de pulverização agrícola.<br>Construída por pilotos. Para pilotos. No Brasil.</p>
+            <div class="flex justify-center gap-4 text-xs">
+                <span><i class="fas fa-shield-alt"></i> Garantia de 30 dias</span>
+                <span><i class="fas fa-comment"></i> Suporte em português</span>
+                <span><i class="fas fa-wifi"></i> Funciona offline</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 md:hidden z-50 shadow-[0_-5px_10px_rgba(0,0,0,0.05)] flex items-center justify-between">
+        <div class="text-sm font-bold text-gray-800">Teste Grátis 14 Dias</div>
+        <button class="bg-green-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">Começar</button>
+    </div>
+
+</body>
+</html>
