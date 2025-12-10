@@ -124,6 +124,49 @@ export default function AdvertorialPage() {
           <p>O fazendeiro olha pro Windy dele. Vê que estava &quot;12 km/h, sol, tranquilo.&quot;</p>
           <p>E ele fala: &quot;Então foi erro seu, piloto.&quot;</p>
 
+          {/* COMPARISON TABLE */}
+          <div className="my-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center leading-tight">O Que Seu App de Clima &quot;Grátis&quot; Esconde de Você?</h2>
+            <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
+              <table className="w-full text-sm text-left text-gray-600 min-w-[600px]">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 border-b">
+                  <tr>
+                    <th className="px-4 py-3 font-bold w-[20%]">Recurso</th>
+                    <th className="px-4 py-3 font-bold text-red-600 w-[40%] bg-red-50/10">Apps Comuns <br/><span className="text-[10px] text-gray-400 font-normal normal-case">(Windy, ClimaTempo, etc.)</span></th>
+                    <th className="px-4 py-3 font-bold text-green-700 bg-green-50 w-[40%] border-t-4 border-green-500">Safra Fácil <br/><span className="text-[10px] text-green-600 font-normal normal-case">(Piloto PRO)</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-4 py-4 font-medium text-gray-900">Vento na Altura do Voo</td>
+                    <td className="px-4 py-4 bg-red-50/5"><span className="font-bold text-red-600">❌ Cego.</span> Mostra apenas vento no chão (0-10m).</td>
+                    <td className="px-4 py-4 bg-green-50/30"><span className="font-bold text-green-600">✅ Visão Raio-X.</span> Monitora vento real a 50m, 100m e 120m.</td>
+                  </tr>
+                  <tr className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-4 py-4 font-medium text-gray-900">Prova Jurídica</td>
+                    <td className="px-4 py-4 bg-red-50/5"><span className="font-bold text-red-600">❌ Nenhuma.</span> É a sua palavra contra a do fazendeiro.</td>
+                    <td className="px-4 py-4 bg-green-50/30"><span className="font-bold text-green-600">✅ Relatório PDF.</span> Documento oficial com data, hora e mapa.</td>
+                  </tr>
+                  <tr className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-4 py-4 font-medium text-gray-900">Conexão no Campo</td>
+                    <td className="px-4 py-4 bg-red-50/5"><span className="font-bold text-red-600">❌ Trava.</span> Precisa de 4G para carregar mapas.</td>
+                    <td className="px-4 py-4 bg-green-50/30"><span className="font-bold text-green-600">✅ Modo Rural.</span> Funciona 100% offline (mapas salvos).</td>
+                  </tr>
+                  <tr className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-4 py-4 font-medium text-gray-900">Alerta de Risco (KP/Deriva)</td>
+                    <td className="px-4 py-4 bg-red-50/5"><span className="font-bold text-red-600">❌ Não avisa.</span> Você descobre o erro quando o drone cai.</td>
+                    <td className="px-4 py-4 bg-green-50/30"><span className="font-bold text-green-600">✅ Semáforo.</span> Avisa &quot;PARE&quot; antes de você decolar.</td>
+                  </tr>
+                  <tr className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-4 py-4 font-medium text-gray-900">Segurança do Piloto</td>
+                    <td className="px-4 py-4 italic bg-red-50/5">&quot;A sorte protege&quot; <span className="text-xs text-gray-400 font-normal">(Amador)</span></td>
+                    <td className="px-4 py-4 bg-green-50/30 font-bold text-green-700">&quot;A tecnologia garante&quot; <span className="text-xs text-green-600 font-normal">(Profissional)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           {/* SECTION: FRAGMENTATION */}
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">A Armadilha da Fragmentação: Por Que Fazer Malabarismo com 5 Apps Não É &quot;Profissionalismo&quot;</h2>
           <p>Aqui está o que a maioria dos pilotos faz antes de cada voo:</p>
