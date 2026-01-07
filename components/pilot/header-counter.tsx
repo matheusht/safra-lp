@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { AlertCircle } from 'lucide-react'
 
 export function HeaderCounter() {
-  const [count, setCount] = useState(37)
+  const [count, setCount] = useState(27)
   const [isDecreased, setIsDecreased] = useState(false)
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export function HeaderCounter() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-5" style={{ backgroundColor: '#c10000' }}></span>
                 <span className="relative inline-flex rounded-full h-2 w-2" style={{ backgroundColor: '#c10000' }}></span>
               </span>
-              <span className="text-[10px] font-bold text-white/50 uppercase tracking-widest">vivo</span>
+              <span className="text-[10px] font-bold text-white uppercase tracking-widest">vivo</span>
             </div>
             
             <p className="text-white font-medium flex items-center tracking-tight">
