@@ -1,7 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Calendar } from "lucide-react"
+import Link from "next/link"
 
 export function PilotCTA() {
   return (
@@ -16,12 +16,13 @@ export function PilotCTA() {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-12 py-8 h-auto shadow-[0_0_30px_rgba(34,197,94,0.4)] rounded-xl border border-green-400/50">
-                 <a href="https://wa.me/5544999522514?text=Quero%20testar%20o%20Safra%20Fácil" target="_blank" rel="noopener noreferrer" className='flex items-center'>
-                    Quero Testar Grátis por 14 Dias
-                    <ArrowRight className="ml-2 h-6 w-6" />
-                 </a>
-             </Button>
+              <Link 
+                href="/agendar" 
+                className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-12 py-5 rounded-xl shadow-[0_0_30px_rgba(34,197,94,0.4)] border border-green-400/50 flex items-center transition-all hover:scale-105 active:scale-95"
+              >
+                Quero Testar Grátis por 14 Dias
+                <ArrowRight className="ml-2 h-6 w-6" />
+              </Link>
         </div>
         <p className="mt-4 text-slate-400 text-sm">Sem cartão de crédito. Cancele quando quiser.</p>
       </div>

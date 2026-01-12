@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Play, CheckCircle2, Wind } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export function PilotHero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
@@ -61,18 +62,20 @@ export function PilotHero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 h-14 shadow-lg shadow-green-900/20 text-white w-full sm:w-auto">
-                <a href="https://wa.me/5544999522514?text=Quero%20testar%20o%20Safra%20Fácil" target="_blank" rel="noopener noreferrer" className='flex items-center justify-center w-full'>
-                  Começar Teste Grátis
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white w-full sm:w-auto bg-transparent">
-                <a href="https://wa.me/5544999522514?text=Quero%20ver%20uma%20demonstração%20do%20Safra%20Fácil" target="_blank" rel="noopener noreferrer" className='flex items-center justify-center w-full'>
-                  <Play className="mr-2 h-5 w-5" />
-                  Ver na prática
-                </a>
-              </Button>
+              <Link 
+                href="/agendar" 
+                className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4 rounded-md shadow-lg shadow-green-900/20 text-white w-full sm:w-auto font-medium flex items-center justify-center transition-all hover:scale-105 active:scale-95"
+              >
+                Começar Teste Grátis
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+              <Link 
+                href="/agendar" 
+                className="text-lg px-8 py-4 border border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white w-full sm:w-auto bg-transparent rounded-md flex items-center justify-center transition-all"
+              >
+                <Play className="mr-2 h-5 w-5" />
+                Ver na prática
+              </Link>
             </div>
 
             <div className="pt-8 border-t border-slate-800 grid grid-cols-2 gap-6 text-left">
